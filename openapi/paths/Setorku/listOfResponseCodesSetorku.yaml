@@ -3,7 +3,7 @@ put:
   tags:
     - Setorku 
   description: |
-    ## IDS Create Store Code API Response Codes
+    ### IDS Create Store Code API Response Codes
 
     |Response |Description              |
     |---------|-------------------------|
@@ -19,16 +19,16 @@ put:
     |10       |PRODUCTID_NOT_FOUND      |
     |02       |INVALID_TOTAL_AMOUNT     |
 
-    ## Merchant's Notify API Response Codes
+    ### Merchant's Notify API Response Codes
 
-    ### NotifPayment 
+    #### NotifPayment 
 
     |Response |Description              |
     |---------|-------------------------|
     |00       |SUCCESS                  |
     |05       |ERROR                    |
 
-    ### NotifReversal
+    #### NotifReversal
 
     |Response |Description              |
     |---------|-------------------------|

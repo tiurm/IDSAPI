@@ -3,14 +3,14 @@ put:
   tags:
    - Setorku 
   description: |
-    ## Flow - Reconcile Flow
+    ### Flow (Reconcile File)
 
     ![Reconcile Flow]()
 
     Details:
     1. Reconciliation File will send to merchants a day after (D+1) at 10.00 am
 
-    ## Format
+    ### Format
 
     ![Format]()
 
