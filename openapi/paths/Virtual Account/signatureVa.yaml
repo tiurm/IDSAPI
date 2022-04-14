@@ -1,0 +1,31 @@
+put:
+  summary: Signature (VA)
+  tags:
+    - Virtual Account
+  description: |
+    To ensure security, one particular key, the field Signature, is implemented. It is the key check against requested data. This field is the result of the SHA1 encryption of a combination of all the other fields plus a password.
+
+    **Signature = SHA1([Concat all the field values except signature] + Password)**
+
+    For example:
+
+    |Name                |Value                                     |
+    |--------------------|------------------------------------------|
+    |tx_id               |DMY20210528131636224                      |
+    |tx_date             |2021-07-09 15:16:36                       |
+    |bank_code           |014                                       |
+    |tx_amt              |10000                                     |
+    |is_open             |false                                     |
+    |va_expired_time     |1200                                      |
+    |is_lifetime         |false                                     |
+    |username            |agus                                      |
+    |trx_expiration_time |1200                                      |
+    |partner_id          |DMY                                       |
+    |terminal            |XMP                                       |
+    |signature           |272897e7a137d8bb0e7b38e89076e074adbd1b10  |
+
+    => Signature = **SHA1(DMY20210528131636224+2021-07-09 15:16:36+ 014+10000+false +1200+false+agus+1200+DMY+XMP+secret key)**
+
+    => Signature = **SHA1(DMY202105281316362242021-07-09 15:16:36 01410000false1200falseagus1200DMYXMP+secret key)**
+
+    => Signature = **272897e7a137d8bb0e7b38e89076e074adbd1b10**

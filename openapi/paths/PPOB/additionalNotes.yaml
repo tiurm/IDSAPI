@@ -1,11 +1,12 @@
 put: 
   summary: Additional Notes
-
+  tags:
+      - Multibiller (PPOB)
   description: |
     * All fields are case-insensitive.
     * Rows in the RESPONSE table that that are in gray indicate that the fields have the same value as those in the REQUEST table.
 
-    ## Respon Inquiry
+    ### Respon Inquiry
 
     |No |Product                  |Node                   |Description             |
     |---|-------------------------|-----------------------|------------------------|
@@ -132,7 +133,7 @@ put:
     |   |                         |ntpd                   |ntpd                    |
     
 
-    ## Respon Payment
+    ### Respon Payment
 
     |No |Product                  |Node                   |Description             |
     |---|-------------------------|-----------------------|------------------------|
@@ -325,7 +326,7 @@ put:
     |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
     |   |                         |ntpd                   |ntpd                    |
 
-    ## Respon Advice
+    ### Respon Advice
 
     |No |Product                  |Node                   |Description             |
     |---|-------------------------|-----------------------|------------------------|
@@ -511,5 +512,4 @@ put:
     |   |                         |biaya_parkir_pokok     |Biaya parkir pokok      |
     |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
     |   |                         |ntpd                   |ntpd                    |
-  tags:
-    - Multibiller (PPOB)
+  

@@ -1,0 +1,36 @@
+put: 
+  summary: List of Response Codes (Setorku)
+  tags:
+    - Setorku 
+  description: |
+    ## IDS Create Store Code API Response Codes
+
+    |Response |Description              |
+    |---------|-------------------------|
+    |00       |SUCCESS                  |
+    |01       |SYSTEM_ERROR             |
+    |09       |INVALID_PARAMETER        |
+    |03       |PARTNER_ID_NOT_FOUND     |
+    |04       |ACCESS_DENIED            |
+    |06       |NOT_FOUND                |
+    |08       |ALREADY_PAID             |
+    |07       |INVALID_DATABASE_PROSES  |
+    |05       |ERROR                    |
+    |10       |PRODUCTID_NOT_FOUND      |
+    |02       |INVALID_TOTAL_AMOUNT     |
+
+    ## Merchant's Notify API Response Codes
+
+    ### NotifPayment 
+
+    |Response |Description              |
+    |---------|-------------------------|
+    |00       |SUCCESS                  |
+    |05       |ERROR                    |
+
+    ### NotifReversal
+
+    |Response |Description              |
+    |---------|-------------------------|
+    |00       |SUCCESS                  |
+    |05       |ERROR                    |

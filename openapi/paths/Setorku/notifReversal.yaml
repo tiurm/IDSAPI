@@ -1,0 +1,49 @@
+post: 
+  summary: Notif Reversal           
+  tags:
+    - Merchant's Notify API
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties: 
+            kodebayar: 
+              type: string 
+              example: "1701600419003"
+              description: Payment code                 
+            
+            tracking_reff:
+              type: string 
+              example: A180119102015
+              description: Tracking reference number 
+
+            partnerid: 
+              type: string 
+              example: TES 
+              description: Partner ID 
+            
+            signature:  
+              type:  string 
+              example: 97b168118cddc03e72f9e728d64e54e1912a3618
+              description: signature
+
+  responses:
+    "200" :
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: "object"
+            properties:
+              rc: 
+                type: string 
+                example: "00"
+                description: Response Code
+
+              rcdesc: 
+                type: string 
+                example: "SUKSES"
+                description: Response Description

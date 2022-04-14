@@ -1,0 +1,22 @@
+put: 
+  summary: List of Response Codes (Ototrans)
+  tags: 
+    - Ototrans 
+  description: |
+    |Response Code |Description                                             |
+    |--------------|--------------------------------------------------------|
+    |00   |SUCCESS                                                          |
+    |EE   |Kurang Parameter                                                 |
+    |31   |Error - Kode Agen Tidak Terdaftar                                |
+    |33   |Error - Product Tidak Terdaftar                                  |
+    |34   |Error - Invalid Signature                                        |
+    |35   |Error - Untuk Transaksi ke Rekening Ini Masih Dalam Pengecekan   |
+    |36   |Error - Maaf untuk Rekening ini sudah melebihi jumlah Transaksi  |
+    |37   |Error - Trackingreff Tidak valid                                 |
+    |68   |Suspect                                                          |
+    |5/05 |General Error                                                    |
+    |205  |Kode Bank tidak Ditemukan                                        |
+    |206  |Transaksi Gagal, Hubungi Provider                                |
+    |300  |Disbursement is Failed                                           |
+    |209  |Nomor Rekening Tujuan Tidak Ditemukan                            |
+    |999  |Other Error                                                      |

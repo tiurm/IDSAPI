@@ -5,12 +5,13 @@ info:
   
 
 tags:
+
   - name: Multibiller (PPOB)
     description: |
        ## Purpose of This Document (PPOB)
         This document elaborates upon the specifications and process flows that are used by aggregator and its partners to make a service payment point.
 
-        ### Scope (PPOB)
+        ### Scope 
         This document covers for each product:
         * Normal and Abnormal Transaction Flows
         * Message Formats together with their respective samples
@@ -20,7 +21,7 @@ tags:
         * Payment
         * Advice or Reversal (subject to the product)
 
-        ### Target Audience (PPOB)
+        ### Target Audience 
         This document is targeted for use by merchants/partners/clients acting as Collecting Agents.
 
         ## Interface Requiremetns (PPOB)
@@ -88,67 +89,195 @@ tags:
 
           Aggregator will in turn submit the message to Biller upon successfully authenticating its signature. Biller then responds with acknowledgement data (such as Response Code 00, Reversal Reference Code) to aggregator, who in turn passes the data to CA, if the reversal is successful. If failed, CA receives a response code other than 00. The Reversal requests are sent up to a maximum of 3 times if a previous Reversal request still has not received a response message within a certain agreed timeframe (in this case, 30s).
         
-  - name: Echo
-    description: Example echo operations.
-  - name: User
-    description: Operations about users.
-  - name: Tag
-    description: This is a tag description.
-servers:
-  - url: 'https://{tenant}/api/v1'
-    variables:
-      tenant:
-        default: www
-        description: Your tenant id
-  - url: 'https://example.com/api/v1'
+  - name: Virtual Account
+    description: |
+      ## Purpose of This Document (VA)
+      This document elaborates upon the specifications and process flows that are used by PT. Inovasi Daya Solusi and its partners to make a service create virtual account.
+
+      ### Scope 
+      This document covers:
+      * Creating VA Flow
+      * Create and Notify Transaction Flows
+      * Message Formats together with their respective samples
+
+      The transaction flows in each product mainly revolve around the following functions:
+      * Inquiry
+      * Payment
+      * Advice or Reversal (subject to the product)
+
+      ### Target Audience
+      This document is prepared for merchant IT Development team.
+      
+      ## Flow (VA)
+      ![Flow]()
+      
+      ### Notes:
+      - If VA already Expired Biller or customers who want to make a transaction should request the VA Again
+      - Updating VA does not mean Update VA number
+      - VA that already created will be Automatically expired after 24 hours
+      - VA that already paid cannot be used again
+
+      ## Interface Requirements (VA)
+      |Interface Requirements|                                                                                 |
+      |----------------------|---------------------------------------------------------------------------------|
+      |Protocol              |HTTP / HTTPS (Recommended)                                                       |
+      |Data Exchange Type    |JSON                                                                             |
+      |Method                |POST                                                                             |
+      |URL                   |https://xxx.xxx.xxx:xx/IDS/webresources/(IP and Port to be provided later)       |
+      |Port                  |To be provided later                                                             |
+      |PartnerID             |To be provided later                                                             |
+      |Password              |To be provided later                                                             |
+  
+  - name: Ototrans  
+    description: |
+      ## Purpose of This Document (Ototrans)
+      This document elborates upon the specification and process flows that are used by PT Inovasi Daya Solusi and its partner to make a service payment point.
+
+      ### Scope
+
+      This document covers for each product:
+      * Normal and abnormal transaction flows
+      * Message formats together with their respective samples
+
+      The transaction flows in each product mainly revolve around the following function;
+      * Inquiry
+      * Payment
+      * Advice
+
+      ### Target Audience 
+
+      This document is targeted for use by merchants.
+
+      ## Flow (Ototrans)
+      ![Flow]()
+
+  - name: Setorku 
+    description: |
+      ## Purpose of This Document (Setorku)
+      This document elaborates upon the specifications and process flows that are used by PT. IDS and its partners to make a service deposit point.
+
+      ### Scope
+
+      This document covers:
+      * Create and Notify Transaction Flows
+      * Message Formats together with their respective samples
+
+      ### Target Audience 
+      
+      This document is prepared for Merchant's IT Development Team.
+
+      ## Flow (Setorku)
+
+      ### Work Flow
+      ![Work Flow]()
+
+      Details
+      1. DKH Assignment process can be integrated with mobile collection of merchants.
+      2. Setor Code can only be generated after Collector close the DKH.
+
+      ### Service Point Flow
+       ![Service Point Flow]()
+
+      ## Interface Requirements (Setorku)
+
+      |Interface Requirements|                                                                                 |
+      |----------------------|---------------------------------------------------------------------------------|
+      |Protocol              |HTTP / HTTPS (Recommended)                                                       |
+      |Data Exchange Type    |JSON                                                                             |
+      |Method                |POST                                                                             |
+      |URL                   |https://xxx.xxx.xxx:xx/IDS/webresources/setorDTH (IP and Port to be provided later)|
+      |Port                  |To be provided later                                                             |
+      |PartnerID             |To be provided later                                                             |
+      |Password              |To be provided later                                                             |
+
 paths:
 
+# PPOB ==========================================
+
   /Inquiry (PPOB): 
-    $ref: paths/inquiryPPOB.yaml
+    $ref: paths/PPOB/inquiryPPOB.yaml
 
   /Payment (PPOB):
-    $ref: paths/paymentPPOB.yaml
+    $ref: paths/PPOB/paymentPPOB.yaml
 
   /Advice (PPOB):
-    $ref: paths/advicePPOB.yaml
+    $ref: paths/PPOB/advicePPOB.yaml
 
   /Reversal (PPOB):
-    $ref: paths/reversalPPOB.yaml
+    $ref: paths/PPOB/reversalPPOB.yaml
 
   /Additional Notes: 
-    $ref: paths/additionalNotes.yaml
+    $ref: paths/PPOB/additionalNotes.yaml
   
   /Products:
-    $ref: paths/products.yaml
+    $ref: paths/PPOB/products.yaml
 
   /Signature (PPOB):
-    $ref: paths/signaturePPOB.yaml
+    $ref: paths/PPOB/signaturePPOB.yaml
 
   /List of Response Codes(PPOB):
-    $ref: paths/listOfResponseCodesPPOB.yaml
+    $ref: paths/PPOB/listOfResponseCodesPPOB.yaml
 
-  '/users/{username}':
-    $ref: 'paths/users_{username}.yaml'
-  /echo:
-    $ref: paths/echo.yaml
-  /pathItem:
-    $ref: paths/path-item.yaml
-  /pathItemWithExamples:
-    $ref: paths/path-item-with-examples.yaml
-components:
-  securitySchemes:
-    main_auth:
-      type: oauth2
-      flows:
-        implicit:
-          authorizationUrl: 'http://example.com/api/oauth/dialog'
-          scopes:
-            'read:users': read users info
-            'write:users': modify or remove users
-    api_key:
-      type: apiKey
-      in: header
-      name: api_key
-    basic_auth:
-      type: http
-      scheme: basic
+# Virtual Account ==========================================
+
+  /Create VA:
+    $ref: paths/Virtual Account/createVA.yaml
+
+  /Call Back VA Aggregator:
+    $ref: paths/Virtual Account/callBackVaAggregator.yaml
+
+  /Update VA:
+    $ref: paths/Virtual Account/updateVa.yaml
+
+  /Signature (VA):
+    $ref: paths/Virtual Account/signatureVa.yaml
+
+  /List of Bank code:
+    $ref: paths/Virtual Account/ListOfBank.yaml
+
+  /VA Aggregator status:
+    $ref: paths/Virtual Account/vaAggregatorStatus.yaml
+
+  /List of Response Codes (VA):
+    $ref: paths/Virtual Account/listOfResponseCodesVa.yaml
+
+# Ototrans ==========================================
+
+  /Inquiry (Ototrans):
+    $ref: paths/Ototrans/inquiryOtotrans.yaml
+
+  /Payment (Ototrans):
+    $ref: paths/Ototrans/paymentOtotrans.yaml
+
+  /Advice (Ototrans):
+    $ref: paths/Ototrans/adviceOtotrans.yaml
+
+  /Account Inquiry:
+    $ref: paths/Ototrans/accountInquiry.yaml
+
+  /Signature (Ototrans):
+    $ref: paths/Ototrans/signatureOtotrans.yaml
+
+  /List of Response Codes (Ototrans):
+    $ref: paths/Ototrans/listOfResponseCodesOtotrans.yaml
+
+  # Setorku ==========================================
+
+  /IDS's Create Store code:
+    $ref: paths/Setorku/createStoreCode.yaml
+
+  /Notif Payment: 
+    $ref: paths/Setorku/notifPayment.yaml
+
+  /Notif Reversal:
+    $ref: paths/Setorku/notifReversal.yaml
+
+  /Signature (Setorku):
+    $ref: paths/Setorku/signatureSetorku.yaml
+
+  /List of Response Codes (Setorku):
+    $ref: paths/Setorku/listOfResponseCodesSetorku.yaml
+
+  /Recon File:
+    $ref: paths/Setorku/reconFile.yaml
+

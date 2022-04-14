@@ -1,0 +1,22 @@
+put:
+  summary: List of Response Codes (VA)
+  tags:
+    - Virtual Account 
+  description: |
+    |Response |Description                                  |
+    |---------|---------------------------------------------|
+    |000 |SUCCESS                                           |
+    |005 |General Error                                     |
+    |031 |ERROR - Kode Agen tidak terdaftar                 |
+    |032 |ERROR - Invalid Format                            |
+    |033 |ERROR - Produk tidak terdaftar                    |
+    |034 |ERROR - Invalid Signature                         |
+    |035 |ERROR - Duplicate Tx_id                           |
+    |037 |ERROR - Tx_id Tidak ditemukan                     |
+    |038 |ERROR - VA Masih aktif                            |
+    |039 |ERROR - Invalid Amount                            |
+    |040 |ERROR - VA Tidak bisa digunakan untuk Bank ini    |
+    |041 |ERROR - Update VA Gagal, Coba beberapa saat lagi  |
+    |042 |ERROR - VA Expired                                |
+    |999 |Internal Server Error                             |
+    |300 |FAILED                                            |

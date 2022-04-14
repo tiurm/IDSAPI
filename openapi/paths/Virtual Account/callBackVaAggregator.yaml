@@ -1,0 +1,93 @@
+post: 
+  summary: Call Back VA Agregator
+  tags:
+    - Virtual Account
+  
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            tx_id:
+              type: string 
+              example: DMY20210528131636171
+              description: Transaksi id dengan format kode partner + unik kode
+
+            tx_date:  
+              type: string
+              example: "2021-06-07 13:16:36"
+              description: Tanggal transaksi dilakukan dengan fomat yyyy-MM-dd HH:mm:ss
+            
+            bank_code:
+              type: string 
+              example: "014"
+              description: Kode Bank
+            
+            tx_amt: 
+              type: string
+              example: "10000"
+              description: Jumlah biaya yang di transaksikan Max 300 juta rupiah
+
+            username:
+              type: string 
+              example: agus
+              description: Nama yang akan ditampilkan
+
+            va_number:  
+              type: string 
+              example: "123456789182827272"
+              description: Nomor VA
+            
+            is_success:
+              type: string
+              example: "true"
+              description: Response transaksi
+
+            finish_date:
+              type: string
+              example: "2021-06-07 13:18:30"
+              description: Tanggal transaksi selesai
+
+            trx_expired_date:
+              type: string
+              example: "2021-06-07 13:18:30"
+              description: Transaksi expired time dengan fomat yyyy-MM-dd HH:mm:ss
+
+            reff_no:
+              type: string
+              example: 12345b1-23be-45670-a123-5ca678f12b3e
+              description: Nomor Referal
+
+            signature:
+              type: string 
+              example: 3f7b20e6e014edaa6ea597b4191de3a9d8eeff9
+              description: signature
+
+  responses:
+    "200": 
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: "object"
+            properties:
+              status:
+                type: object
+                description: Status pembuatan VA
+                properties:
+                  code: 
+                    type: string 
+                    example: "000"
+                    description: Kode status callback VA
+                  
+                  message: 
+                    type: string 
+                    example: "Success"
+                    description: Pesan saat VA dibuat
+              
+              signature:  
+                type: string
+                example: 73a1218e0a3714db12608883b94a5695fcc2befb
+                description: signature

@@ -1,0 +1,219 @@
+post: 
+  description: This API submits a transaction request to generate a Store Code.
+  summary: IDS's Create Store Code          
+  tags:
+    - Setorku
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties: 
+            trxid:
+              type: string 
+              example: AS111111111111111111
+              description: Transaction ID
+            
+            trxdate:
+              type: string 
+              example: 2018-02-28 11:11:11
+              description: Transaction Date
+            
+            productid:
+              type: string 
+              example: "1"
+              description: Product ID
+
+            merchanttransactionid:
+              type: string 
+              example: "90901"
+              description: Merchant's Transaction ID
+            
+            usercode: 
+              type: string
+              example: "120"
+              description: User Code
+            
+            username:
+              type: string
+              example: Maman
+              description: User Name
+
+            totalbill:
+              type: string
+              example: "4"
+              description: Total Number of Bills
+
+            totalamount:  
+              type: string
+              example: "2000000"
+              description: Total Amount 
+
+            trackingref:
+              type: string
+              example: A109 
+              description: Tracking Reference 
+            
+            notif_url:
+              type: string 
+              example: http://xxxx
+              description: URL notifications
+
+            notifcancel_url:
+              type: string 
+              example: http://xxxx
+              description: URL notifications
+
+            signature:
+              type: string
+              example: 3093f8133f9d698ee796fbedb96f96545679a1e0
+              description: A signature hash value to ensure data security and integrity
+
+            detail:
+              type: array
+              items:
+                type: object
+                properties:
+                  customerid: 
+                    type: string
+                    description: Customer ID
+                  totalamount:
+                    type: string 
+                    description: Total amount
+                  companyid: 
+                    type: string 
+                    description: Company ID
+              example:
+                - customerid: "9874"
+                  totalamount: "500000"
+                  companyid: "1" 
+
+                - customerid: "1222322"
+                  totalamount: "500000"
+                  companyid: "1" 
+
+                - customerid: "65232124221"
+                  totalamount: "500000"
+                  companyid: "1"  
+
+                - customerid: "6252"
+                  totalamount: "500000"
+                  companyid: "1"    
+
+                    
+                          
+  
+  responses:
+    "200" :
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: "object"
+            properties:
+              merchanttransactionid:
+                type: string 
+                example: "90901"
+                description: Merchant's Transaction ID
+              
+              productid: 
+                type: string 
+                example: "1"
+                description: Product Id
+              
+              rc: 
+                type: string 
+                example: "00"
+                description: Response Code
+              
+              rcdesc: 
+                type: string 
+                example: SUKSES
+                description: Response Code Description
+
+              totalamount:
+                type: string 
+                example: "2000000"
+                description: Total Amount 
+              
+              totalbill: 
+                type: string
+                example: "4"
+                description: Total number of bills 
+
+              trackingref: 
+                type: string 
+                example: A109 
+                description: Tracking Reference
+
+              trxdate: 
+                type: string 
+                example: 2018-02-28 11:11:11
+                description: Transaction Date 
+
+              trxid: 
+                type: string 
+                example: AS111111111111111111
+                description: Transaction ID 
+
+              usercode: 
+                type: string 
+                example: "120"
+                description: User code 
+
+              username: 
+                type: string 
+                example: "maman"
+                description: User Name
+
+              ls_kodebayar:
+                type: object
+                properties:
+                  detail: 
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        customerid:
+                          type: string
+                          description: Customer Id
+                        seqno:
+                          type: string 
+                          description: Sequence number 
+                        totalamount:
+                          type: string 
+                          description: Total amount 
+
+                    example: 
+                      - customerid: "9874"
+                        seqno: "0"
+                        totalamount: "500000"  
+
+                      - customerid: "1222322"
+                        seqno: "0"
+                        totalamount: "500000" 
+                      
+                      - customerid: "65232124221"
+                        seqno: "0"
+                        totalamount: "500000" 
+                      
+                      - customerid: "6252"
+                        seqno: "0"
+                        totalamount: "500000" 
+
+                  kodebayar: 
+                    type: string 
+                    example: "90901061"
+                    description: Payment code 
+
+                  totalamount: 
+                    type: string 
+                    example: "2000000"
+                    description: Total Amount
+                  
+                  totalbill: 
+                    type: string 
+                    example: "4"
+                    description: Total number of bills

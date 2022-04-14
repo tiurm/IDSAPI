@@ -1,0 +1,141 @@
+post: 
+  summary: Advice            
+  tags:
+    - Ototrans
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            trxid:
+              type: string
+              example: "20220216103510"
+              description: Transaction ID
+              
+            trxdate:
+              type: string
+              example: 2022-02-16 11:11:10
+              description: Transaction Date 
+              format: yyyy-MM-dd HH:mm:ss
+            
+            partnerid:
+              type: string
+              example: IDS
+              description: Partner ID
+            
+            productid:
+              type: string
+              example: "008"
+              description: Product ID
+
+            customerid:
+              type: string
+              example: "220216001"
+              description: Customer ID
+
+            extendInfo:
+              type: string
+              example: "{\"bankCode\":\"008\",\"bankAccount\":\"8760673566\",\"amountTransfer\":\"10000\",\"purpose\":\"Test Transfer\",\"senderId\":\"220216001\",\"senderName\":\"Tester 1\"}"
+              description: Other entry info apart from CustomerID if any.
+
+            trackingref:
+              type: string
+              example: IDS20220216103510
+              description: Tracking Reference 
+
+            terminalid:
+              type: string
+              example: IDS
+              description: Terminal ID
+
+            signature:
+              type: string
+              example: 16e225e223919c26a8b1b03ff728dafb77ac1ce0
+              description: Hashed signature from request parameters value and key except signature
+
+  responses:
+    "200" :
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: "object"
+            properties:
+              trxid:
+                type: string
+                example: "20220216103510"
+                description: Transaction ID
+            
+              trxdate:
+                type: string
+                example: 2022-02-16 11:16:39
+                description: Request date and time (yyyy-MM-ddHH:mm:ss)
+                format: yyyy-MM-dd HH:mm:ss
+            
+              partnerid:
+                type: string
+                example: IDS
+                description: Partner ID
+              
+              productid:
+                type: string
+                example: "008"
+                description: Product ID
+
+              customerid:
+                type: string
+                example: "220216001"
+                description: Customer ID
+
+              extendInfo:
+                type: string
+                example: "{\"bankCode\":\"008\",\"bankAccount\":\"8760673566\",\"amountTransfer\":\"10000\",\"purpose\":\"Test Transfer\",\"senderId\":\"220216001\",\"senderName\":\"Tester 1\"}"
+                description: Extend info
+
+              receiptcode:
+                type: string
+                example: 7c037b12-f44e-4057-8b2a-9022cc2bde8e
+                description: Receipt code transfer
+
+              additionaldata:
+                type: string
+                example: null
+                description: Additional data  
+
+              additionaldata_new:
+                type: object
+                example: "{\"nama_pelanggan\":\"DISBURSEMENT OY\",\"tanggal_lunas\":\"2022-02-16 11:10:05\",\"no_struk\":\"7c037b12-f44e-4057-8b2a-9022cc2bde8e\"}"
+                description: Additional data
+                
+              rc:
+                type: string
+                example: '00'
+                description: Response Code
+
+              rcdesc:
+                type: string
+                example: SUKSES
+                description: Response Code Description
+              
+              trackingref:
+                type: string
+                example: "IDS20220216103510"
+                description: Tracking Reference 
+
+              terminalid:
+                type: string
+                example: IDS
+                description: Terminal ID
+
+              signature:
+                type: string
+                example: 462dca101cd2bdd533838a5d3247cee57cd22ea8
+                description: Hashed signature from request parameters value and key except signature
+
+              amount: 
+                type: string
+                example: "10000"
+                description: Amount

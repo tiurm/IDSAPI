@@ -1,0 +1,65 @@
+post: 
+  summary: Notif Payment     
+  description: This API is provided by Merchant. It will be called by IDS to notify Merchant about the status of the order payment made by Merchant's Collector.       
+  tags:
+    - Setorku
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties: 
+            reffno: 
+              type: string 
+              example: "2018031411383517732"
+              description: Reference Number
+            
+            kodebayar: 
+              type: string 
+              example: "1701600419003"
+              description: Payment Code 
+            
+            amount: 
+              type: string 
+              example: "2765000.00"
+              description: Amount
+
+            tgl_bayar: 
+              type: string 
+              example: 2018-03-14 11:38:35.0
+              description: Payment Date 
+            
+            tracking_reff:
+              type: string 
+              example: A180119102015
+              description: Tracking reference number 
+
+            partnerid: 
+              type: string 
+              example: TES 
+              description: Partner ID 
+            
+            signature:  
+              type:  string 
+              example: 97b168118cddc03e72f9e728d64e54e1912a3618
+              description: signature
+
+  responses:
+    "200" :
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: "object"
+            properties:
+              rc: 
+                type: string 
+                example: "00"
+                description: Response Code
+
+              rcdesc: 
+                type: string 
+                example: "SUKSES"
+                description: Response Description

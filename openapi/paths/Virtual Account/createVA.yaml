@@ -1,0 +1,157 @@
+post: 
+  summary: Create VA
+  tags:
+    - Virtual Account
+  requestBody:
+    required: true
+    content: 
+      application/json:
+        schema:
+          type: object
+          properties:
+            tx_id:
+              type: string
+              example: DMY20210528131636171
+              description: Transaksi id dengan format kode partner + unik kode
+            
+            tx_date:
+              type: string
+              example: "2021-06-07 13:16:36"
+              description: Tanggal transaksi dilakukan
+
+            bank_code:
+              type: string
+              example: "014"
+              description: Kode Bank
+
+            tx_amt:
+              type: string
+              example: "10000"
+              description: Jumlah biaya yang di transaksikan Max 300 juta rupiah
+
+            is_open:
+              type: string
+              example: "false"
+              description: Apakah va amount yang di transaksikan dikunci
+
+            va_expired_time:
+              type: string
+              example: "120"
+              description: Lamanya VA akan expired jika dikosongkan akan menghasilkan expired dalam 24 jam Time ditulis bedasarkan menit misal untuk 5 menit akan ditulis dengan nilai parameter 5
+
+            is_lifetime:
+              type: string
+              example: "false"
+              description: Isi dengan false untuk membuat VA tidak aktif apabila sudah expired time tercapai
+
+            username:
+              type: string
+              example: agus
+              description: Nama yang akan ditampilkan
+
+            trx_expiration_time:
+              type: string
+              example: "120"
+              description: Transaksi expired time set by minute contoh apabila dalam 5mnt akan expired set to 5, apabila dikosongkan akan disamakan dengan VA expired time
+
+            partner_id:
+              type: string
+              example: DMY
+              description: Id Partner
+
+            terminal:
+              type: string
+              example: XMP
+              description: Terminal transaksi
+
+            signature: 
+              type: string
+              example: 71e3f63735f72b91fccb4bece7185e5e9b62a599
+              description: signature
+            
+  responses:
+    "200": 
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: "object"
+            properties:
+              tx_id:
+                type: string
+                example: DMY20210528131636171
+                description: Transaksi id dengan format kode partner + unik kode
+          
+              tx_date:
+                type: string
+                example: "2021-06-07 13:16:36"
+                description: Tanggal transaksi dilakukan
+
+              bank_code:
+                type: string
+                example: "014"
+                description: Kode Bank
+
+              tx_amt:
+                type: string
+                example: "10000"
+                description: Jumlah biaya yang di transaksikan Max 300 juta rupiah
+
+              va_number:
+                type: string
+                example: "123456789182827272"
+                description: Nomor VA
+              
+              status:
+                type: object
+                description: Status pembuatanVA
+                properties:
+                  code: 
+                    type: string
+                    example: "000"
+                    description: Code status pembuatan VA
+                  
+                  message: 
+                    type: string
+                    example: Success 
+                    description: Pesan saat VA dibuat
+              
+              is_open:
+                type: string
+                example: "false"
+                description: Apakah va amount yang di transaksikan dikunci
+
+              va_expired_time:
+                type: string
+                example: "2021-07-10 11:33:39"
+                description: Lamanya VA akan expired dengan fomat yyyy-MM-dd HH:mm:ss
+              
+              va_status:
+                type: string
+                example: WAITING_PAYMENT
+                description: Status VA yang sudah dibuat
+
+              username:
+                type: string
+                example: agus
+                description: Nama yang akan ditampilkan
+
+              trx_expiration_time:
+                type: string
+                example: "2021-07-10 11:33:41"
+                description: Transaksi expired time dengan fomat yyyy-MM-dd HH:mm:ss
+              
+              partner_id:
+                type: string
+                example: DMY
+                description: Id Partner
+
+              terminal: 
+                type: string 
+                example: XMP
+                description: Terminal transaksi
+
+              signature: 
+                type: string 
+                example: 3f7b20e6e014edaa6ea597b4191de3a9d8eeff9b
+                description: signature

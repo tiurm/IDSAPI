@@ -1,0 +1,141 @@
+post: 
+  summary: Account Inquiry
+  tags:
+    - Ototrans
+
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            trxid:  
+              type: string
+              example: "20220216103510"
+              description: Transaction ID
+            
+            trxdate:
+              type: string
+              example: 2022-02-16 10:35:10
+              description: Transaction Date 
+              format: yyyy-MM-dd HH:mm:ss
+            
+            partnerid:
+              type: string
+              example: IDS
+              description: Partner ID
+            
+            productid:
+              type: string
+              example: "008"
+              description: Product ID
+
+            customerid:
+              type: string
+              example: "220216001"
+              description: Customer ID
+
+            extendInfo:
+              type: string
+              example: "{\"bankCode\":\"008\",\"bankAccount\":\"8760673566\",\"amountTransfer\":\"10000\",\"purpose\":\"Test Transfer\",\"senderId\":\"220216001\",\"senderName\":\"Tester 1\"}"
+              description: Other entry info apart from CustomerID if any.
+
+            trackingref:
+              type: string
+              example: IDS20220216103510
+              description: Tracking Reference 
+
+            terminalid:
+              type: string
+              example: IDS
+              description: Terminal ID
+
+            signature:
+              type: string
+              example: e16ebc6a088a31fae67726bdcb34b3fdcfa19427
+              description: Hashed signature from request parameters value and key except signature  
+
+  responses:
+    "200": 
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: "object"
+            properties:
+              trxid:
+                type: string
+                example: "20220216103510"
+                description: Transaction ID
+            
+              trxdate:
+                type: string
+                example: 2022-02-16 10:39:46
+                description: Request date and time (yyyy-MM-ddHH:mm:ss)
+                format: yyyy-MM-dd HH:mm:ss
+            
+              partnerid:
+                type: string
+                example: IDS
+                description: Partner ID
+
+              productid:
+                type: string
+                example: "008"
+                description: Product ID
+
+              customerid:
+                type: string
+                example: "220216001"
+                description: Customer ID
+
+              extendInfo:
+                type: string
+                example: ""
+                description: Extend info
+
+              customername:
+                type: string
+                example: DISBURSEMENT OY API
+                description: Customer name bank account
+
+              totalamount:
+                type: string
+                example: '10000'
+                description: Total Amount
+
+              additionaldata:
+                type: string
+                example: null
+                description: Additional data
+
+              additionaldata_new: 
+                type: string
+                example: "{\"nama_pelanggan\":\"DISBURSEMENT OY API\"}"
+                description: Additional data
+
+              rc:
+                type: string
+                example: '00'
+                description: Response Code
+
+              rcdesc:
+                type: string
+                example: SUKSES
+                description: Response Code Description
+              
+              trackingref:
+                type: string
+                example: "IDS20220216103510"
+                description: Tracking Reference 
+
+              terminalid:
+                type: string
+                example: IDS
+                description: Terminal ID
+
+              signature:
+                type: string
+                example: 944aae465ba4c43584de31bd81c689d48e00275d
+                description: Hashed signature from request parameters value and key except signature
