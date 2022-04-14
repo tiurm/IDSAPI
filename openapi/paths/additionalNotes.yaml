@@ -1,0 +1,515 @@
+put: 
+  summary: Additional Notes
+
+  description: |
+    * All fields are case-insensitive.
+    * Rows in the RESPONSE table that that are in gray indicate that the fields have the same value as those in the REQUEST table.
+
+    ## Respon Inquiry
+
+    |No |Product                  |Node                   |Description             |
+    |---|-------------------------|-----------------------|------------------------|
+    |1  |**PLN POSTPAID**         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |periode_bln_thn        |BL/TH                   |
+    |   |                         |jumlah_tagihan         |Total Lbr Tagihan       |
+    |   |                         |nominal                |RP Tagihan              |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |                       |                        |
+    |2  |**PLN PREPAID**          |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |periode_bln_thn        |BL/TH                   |
+    |   |                         |jumlah_tagihan         |Total Lbr Tagihan       |
+    |   |                         |nominal                |RP Tagihan              |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |                       |                        |
+    |3  |**BPJS**                 |no_va_kepala_keluarga  |No VA Kepala Kel.       |
+    |   |                         |wilayah                |Nama Cabang             |
+    |   |                         |id_pelanggan           |No VA Kel               |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |jumlah_anggota_keluarga|Jml Anggota Kel.        |
+    |   |                         |jumlah_periode         |Jml Periode             |
+    |   |                         |biaya_premi            |Biaya Premi             |
+    |   |                         |                       |                        |
+    |4  |**Multifinance**         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Total Tagihan           |
+    |   |                         |no_polis               |No. Polis               |
+    |   |                         |tanggal_jatuh_tempo    |Tanggal Jatuh Tempo     |
+    |   |                         |biaya_denda            |Denda                   |
+    |   |                         |                       |                        |
+    |5  |**TV CABLE**             |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |                       |                        |
+    |6  |**HPPOSTPAID**           |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |                       |                        |
+    |7  |**TELKOM GROUP**         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |kode_jastel            |Kode Jastel             |
+    |   |                         |                       |                        |
+    |8  |**ASURANSI**             |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Total Tagihan           |
+    |   |                         |no_polis               |No. Polis               |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |jenis_asuransi         |Jenis Asuransi          |
+    |   |                         |no_sertifikat          |No Sertifikat           |
+    |   |                         |no_hp                  |No Hp Tertanggung       |
+    |   |                         |tgl_mulai              |Waktu Mulai             |
+    |   |                         |tgl_berakhir           |Waktu Berakhir          |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |                       |                        |
+    |9  |**PDAM**                 |wilayah                |Nama Cabang             |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |biaya_denda            |Denda                   |
+    |   |                         |alamat                 |Alamat                  |
+    |   |                         |stand_meter            |Stand Meter             |
+    |   |                         |pemakaian              |Pemakaian               |
+    |   |                         |meterai                |Materai                 |
+    |   |                         |retribusi              |Retribusi               |
+    |   |                         |                       |                        |
+    |10 |**PBB Jawa Barat**       |wilayah                |Nama Cabang             |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |tanggal_jatuh_tempo    |Tanggal Jatuh Tempo     |
+    |   |                         |biaya_denda            |Denda                   |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |alamat                 |Alamat                  |
+    |   |                         |kode_wilayah           |Kode Wilayah            |
+    |   |                         |luas_tanah             |Luas Tanah              |
+    |   |                         |luas_gedung            |Luas Gedung             |
+    |   |                         |kelurahan              |Kelurahan               |
+    |   |                         |kecamatan              |Kecamatan               |
+    |   |                         |                       |                        |
+    |11 |**ESAMSAT Jawa Barat**   |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |no_polis               |No. Polis               |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |alamat                 |Alamat                  |
+    |   |                         |no_id                  |ID no                   |
+    |   |                         |no_milik               |Milik kenama            |
+    |   |                         |no_rangka              |Nomor rangka            |
+    |   |                         |no_mesin               |Nomor mesin             |
+    |   |                         |nama_brand             |Merek Kb                |
+    |   |                         |model                  |Model kb                |
+    |   |                         |tgl_manufaktur         |Tahun Buatan            |
+    |   |                         |biaya_pkb              |Biaya Pokok PKB         |
+    |   |                         |biaya_swd              |Biaya Pokok SWD         |
+    |   |                         |biaya_bbn              |Biaya Pokok BBN         |
+    |   |                         |biaya_denda_pkb        |Biaya Pokok PKB         |
+    |   |                         |biaya_denda_swd        |Biaya Pokok SWD         |
+    |   |                         |biaya_denda_bbn        |Biaya Pokok BBN         |
+    |   |                         |biaya_denda_stnk       |Biaya Pokok STNK        |
+    |   |                         |biaya_denda_tnks       |Biaya Pokok TNKB        |
+    |   |                         |tgl_pajak_akhir        |Tanggal akhir pajak baru|
+    |   |                         |biaya_parkir_pokok     |Biaya Parkir Pokok      |
+    |   |                         |biaya_pajak_progresif  |Biaya Pajak Progresif   |
+    |   |                         |ntpd                   |ntpd                    |
+    
+
+    ## Respon Payment
+
+    |No |Product                  |Node                   |Description             |
+    |---|-------------------------|-----------------------|------------------------|
+    |1  |**PLN PREPAID**          |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |JPA REF                 |
+    |   |                         |id_pelanggan           |ID PEL                  |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |no_meter               |NO METER                |
+    |   |                         |tarifdaya              |TARIF/DAYA              |
+    |   |                         |meterai                |METERAI                 |
+    |   |                         |ppn                    |PPN                     |
+    |   |                         |ppj                    |PPJ                     |
+    |   |                         |angsuran               |ANGSURAN                |
+    |   |                         |rp_stroom_token        |RP STROOM/TOKEN         |
+    |   |                         |jumlah_kwh             |JML KWH                 |
+    |   |                         |token                  |STROOM/TOKEN            |
+    |   |                         |biaya_admin            |BIAYA ADMIN             |
+    |   |                         |pesan_biller           |PESAN BILLER            |
+    |   |                         |                       |                        |
+    |2  |**PLN POSTPAID**         |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |tarifdaya              |TARIF/DAYA              |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |stand_meter            |STAND METER             |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |no_struk               |JPA REF                 |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |pesan_biller           |PESAN BILLER            |
+    |   |                         |pesan_tunggakan        |PESAN TUNGGAKAN         |
+    |   |                         |                       |                        | 
+    |3  |**BPJS**                 |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama  Peserta           |
+    |   |                         |no_struk               |NO REFERENSI            |
+    |   |                         |id_pelanggan           |NO VA KELUARGA          |
+    |   |                         |no_va_kepala_keluarga  |NO VA KEPALA KELUARGA   |
+    |   |                         |jumlah_anggota_keluarga|Jumlah anggota keluarga |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |biaya_premi            |Biaya Premi             |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |pesan_biller           |PESAN BILLER            |
+    |   |                         |                       |                        |
+    |4  |**Multifinance**         |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama  Peserta           |
+    |   |                         |no_struk               |NO REFERENSI            |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |no_polis               |No. Polisi              |
+    |   |                         |tanggal_jatuh_tempo    |Tanggal Jatuh Tempo     |
+    |   |                         |angsuran_ke            |Angsuran ke             |
+    |   |                         |jumlah_tagihan         |Jumlah tagihan          |
+    |   |                         |biaya_denda            |Denda                   |
+    |   |                         |                       |                        |
+    |5  |**TV CABLE**             |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama  Peserta           |
+    |   |                         |no_struk               |NO Resi                 |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |Reff                   |REFF                    |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |                       |                        |
+    |6  |**HPPOSTPAID**           |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama  Peserta           |
+    |   |                         |no_struk               |NO Resi                 |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |nominal                |Tagihan                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |                       |                        |
+    |7  |**TELKOM GROUP**         |tanggal_lunas          |Tanggal                 |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |NO Resi                 |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Total Tagihan           |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |kode_jastel            |Kode Jastel             |
+    |   |                         |Npwp                   |NPWP                    |
+    |   |                         |                       |                        |
+    |8  |**ASURANSI**             |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |NO RESI                 |
+    |   |                         |biaya_admin            |Admin                   |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |no_polis               |No. Polisi              |
+    |   |                         |nama_produk            |Nama Asuransi           |
+    |   |                         |jenis_asuransi         |JENIS ASURANSI          |
+    |   |                         |no_sertifikat          |Nomor Sertifikat        |
+    |   |                         |no_hp                  |Nomor hp tertanggung    |
+    |   |                         |tgl_mulai              |WAKTU MULAI             |
+    |   |                         |tgl_berakhir           |WAKTU BERAKHIR          |
+    |   |                         |                       |                        |
+    |9  |**PULSA**                |tanggal_lunas          |TANGGAL LUNAS           |
+    |   |                         |no_struk               |NO REFERENSI            |
+    |   |                         |id_pelanggan           |No HP                   |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |Token                  |Token Voucher           |
+    |   |                         |nominal                |Vocher Nominal          |
+    |   |                         |                       |                        |
+    |10 |**PDAM**                 |tanggal_lunas          |TANGGAL LUNAS           |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |NO RESI                 |
+    |   |                         |id_pelanggan           |NOMOR PELANGGAN         |
+    |   |                         |periode_bln_thn        |Rincian Tagihan         |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |nominal                |Beban                   |
+    |   |                         |biaya_denda            |Denda                   |
+    |   |                         |Retribusi              |Retribusi               |
+    |   |                         |tagihan_nonair         |tagihan non air         |
+    |   |                         |                       |                        |
+    |11 |**VOUCHER GAME**         |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |no_struk               |Nomor REFERENSI         |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |Token                  |Serial Number           |
+    |   |                         |no_hp                  |Nomor HP                |
+    |   |                         |                       |                        |
+    |12 |**KUPON**                |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |no_struk               |Nomor Struk             |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |Token                  |Kode Voucher            |
+    |   |                         |nominal                |Total Tagihan           |
+    |   |                         |nama_produk            |Voucher                 |
+    |   |                         |tanggal_kadaluarsa     |Tanggal Kadaluarsa      |
+    |   |                         |                       |                        |
+    |13 |**ULTRA VOUCHER**        |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |no_struk               |Nomor Struk             |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |Token                  |Kode Voucher            |
+    |   |                         |nominal                |Total Tagihan           |
+    |   |                         |nama_produk            |Voucher                 |
+    |   |                         |tanggal_kadaluarsa     |Tanggal Kadaluarsa      |
+    |   |                         |url_voucher            |URL Voucher             |
+    |   |                         |                       |                        |
+    |14 |**PBB JAWA BARAT**       |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |nama_pelanggan         |Nama NOP                |
+    |   |                         |no_struk               |Nomor Resi              |
+    |   |                         |id_pelanggan           |NOP                     |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |biaya_admin            |Admin                   |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |nominal                |Total Tagihan           |
+    |   |                         |tanggal_jatuh_tempo    |Jatuh Tempo             |
+    |   |                         |biaya_denda            |Denda                   |
+    |   |                         |alamat                 |Lokasi                  |
+    |   |                         |wilayah                |Kabupaten/Kota          |
+    |   |                         |kode_wilayah           |Kode Wilayah            |
+    |   |                         |luas_tanah             |Luas Tanah              |
+    |   |                         |luas_gedung            |Luas Gedung             |
+    |   |                         |kelurahan              |Kelurahan               |
+    |   |                         |kecamatan              |Kecamatan               |
+    |   |                         |kode_order             |Kode Order              | 
+    |   |                         |                       |                        |    
+    |15 |**ESAMSAT Jawa Barat**   |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |Nomor Resi              |
+    |   |                         |id_pelanggan           |Id Pelanggan            |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |biaya_admin            |Admin                   |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |nominal                |Tagihan                 |
+    |   |                         |no_polis               |No Polis                |
+    |   |                         |alamat                 |Alamat                  |
+    |   |                         |no_id                  |ID No                   |
+    |   |                         |no_milik               |Milik Kenama            |
+    |   |                         |no_rangka              |Nomor Rangka            |
+    |   |                         |no_mesin               |Nomor Mesin             |
+    |   |                         |nama_brand             |Merek Kb                |
+    |   |                         |model                  |Model Kb                |
+    |   |                         |tgl_manufaktur         |Tahun buatan            |
+    |   |                         |tgl_pkb                |Biaya pokok PKB         |
+    |   |                         |tgl_swd                |Biaya pokok SWD         |
+    |   |                         |tgl_bbn                |Biaya pokok BBN         |
+    |   |                         |biaya_denda_pkb        |Biaya Denda PKB         |
+    |   |                         |biaya_denda_swd        |Biaya Denda SWD         |
+    |   |                         |biaya_denda_bbn        |Biaya Denda BBN         |
+    |   |                         |biaya_admin_stnk       |Biaya Denda STNK        |
+    |   |                         |biaya_admin_tnks       |Biaya Denda tnkb        |
+    |   |                         |tgl_pajak_akhir        |Tanggal akhir pajak baru|
+    |   |                         |biaya_parkir_pokok     |Biaya parkir pokok      |
+    |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
+    |   |                         |ntpd                   |ntpd                    |
+
+    ## Respon Advice
+
+    |No |Product                  |Node                   |Description             |
+    |---|-------------------------|-----------------------|------------------------|
+    |1  |**PLN POSTPAID**         |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |tarifdaya              |TARIF/DAYA              |
+    |   |                         |periode_bln_thn        |BL/TH                   |
+    |   |                         |stand_meter            |STAND METER             |
+    |   |                         |nominal                |RP TAG PLN              |
+    |   |                         |no_struk               |NO REF                  |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |pesan_biller           |PESAN BILLER            |
+    |   |                         |pesan_tunggakan        |PESAN TUNGGAKAN         | 
+    |   |                         |                       |                        |
+    |2  |**PLN PREPAID**          |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |JPA REF                 |
+    |   |                         |id_pelanggan           |ID PEL                  |
+    |   |                         |total_bayar            |RP Bayar                |
+    |   |                         |no_meter               |NO METER                |
+    |   |                         |tarifdaya              |TARIF/DAYA              |
+    |   |                         |meterai                |METERAI                 |
+    |   |                         |ppn                    |PPN                     |
+    |   |                         |ppj                    |PPJ                     |
+    |   |                         |angsuran               |ANGSURAN                |
+    |   |                         |rp_stroom_token        |RP STROOM/TOKEN         |
+    |   |                         |jumlah_kwh             |JML KWH                 |
+    |   |                         |token                  |STROOM/TOKEN            |
+    |   |                         |biaya_admin            |BIAYA ADMIN             |
+    |   |                         |pesan_biller           |PESAN BILLER            |
+    |   |                         |                       |                        |
+    |3  |**BPJS**                 |tanggal_lunas          |Tanggal                 |
+    |   |                         |nama_pelanggan         |Nama  Peserta           |
+    |   |                         |no_struk               |NO REFERENSI            |
+    |   |                         |id_pelanggan           |NO VA KELUARGA          |
+    |   |                         |no_va_kepala_keluarga  |NO VA KEPALA KELUARGA   |
+    |   |                         |jumlah_anggota_keluarga|Jumlah anggota keluarga |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |biaya_premi            |Biaya Premi             |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |pesan_biller           |PESAN BILLER            |
+    |   |                         |                       |                        |
+    |4  |**Multifinance**         |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama  Peserta           |
+    |   |                         |no_struk               |NO REFERENSI            |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |no_polis               |No. Polisi              |
+    |   |                         |tanggal_jatuh_tempo    |Tanggal Jatuh Tempo     |
+    |   |                         |angsuran_ke            |Angsuran ke             |
+    |   |                         |jumlah_tagihan         |Jumlah tagihan          |
+    |   |                         |biaya_denda            |Denda                   |
+    |   |                         |                       |                        |
+    |5  |**TV CABLE**             |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama  Peserta           |
+    |   |                         |no_struk               |NO Resi                 |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |Reff                   |REFF                    |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |                       |                        |
+    |6  |**HPPOSTPAID**           |tanggal_lunas          |Tanggal                 |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |NO Resi                 |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |nominal                |Tagihan                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |                       |                        |
+    |7  |**TELKOM GROUP**         |tanggal_lunas          |Tanggal                 |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |NO Resi                 |
+    |   |                         |id_pelanggan           |ID Pelanggan            |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Total Tagihan           |
+    |   |                         |nominal                |Tagihan                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |kode_jastel            |Kode Jastel             |
+    |   |                         |Npwp                   |NPWP                    |
+    |   |                         |                       |                        |
+    |8  |**ASURANSI**             |tanggal_lunas          |TGL LUNAS               |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |NO Resi                 |
+    |   |                         |biaya_admin            |Admin                   |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |no_polis               |No. Polisi              |
+    |   |                         |nama_produk            |Nama Asuransi           |
+    |   |                         |jenis_asuransi         |JENIS ASURANSI          |
+    |   |                         |no_sertifikat          |Nomor Sertifikat        |
+    |   |                         |no_hp                  |Nomor hp tertanggung    |
+    |   |                         |tgl_mulai              |WAKTU MULAI             |
+    |   |                         |tgl_berakhir           |WAKTU BERAKHIR          |
+    |   |                         |                       |                        |
+    |9  |**PULSA**                |tanggal_lunas          |TANGGAL LUNAS           |
+    |   |                         |no_struk               |NO REFERENSI            |
+    |   |                         |id_pelanggan           |No HP                   |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |Token                  |Token Voucher           |
+    |   |                         |nominal                |Vocher Nominal          |
+    |   |                         |                       |                        |
+    |10 |**PDAM**                 |tanggal_lunas          |TANGGAL LUNAS           |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |NO RESI                 |
+    |   |                         |id_pelanggan           |NOMOR PELANGGAN         |
+    |   |                         |periode_bln_thn        |Rincian Tagihan         |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |nominal                |Beban                   |
+    |   |                         |biaya_denda            |Denda                   |
+    |   |                         |Retribusi              |Retribusi               |
+    |   |                         |tagihan_nonair         |tagihan non air         |
+    |   |                         |                       |                        |
+    |11 |**KUPON**                |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |no_struk               |Nomor Struk             |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |Token                  |Kode Voucher            |
+    |   |                         |nominal                |Total Tagihan           |
+    |   |                         |nama_produk            |Voucher                 |
+    |   |                         |tanggal_kadaluarsa     |Tanggal Kadaluarsa      |
+    |   |                         |                       |                        |
+    |12 |**ULTRA VOUCHER**        |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |no_struk               |Nomor Struk             |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |Token                  |Kode Voucher            |
+    |   |                         |nominal                |Total Tagihan           |
+    |   |                         |nama_produk            |Voucher                 |
+    |   |                         |tanggal_kadaluarsa     |Tanggal Kadaluarsa      |
+    |   |                         |url_voucher            |URL Voucher             |
+    |   |                         |                       |                        |
+    |13 |**PBB JAWA BARAT**       |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |nama_pelanggan         |Nama NOP                |
+    |   |                         |no_struk               |Nomor Resi              |
+    |   |                         |id_pelanggan           |NOP                     |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |biaya_admin            |Admin                   |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |nominal                |Total Tagihan           |
+    |   |                         |tanggal_jatuh_tempo    |Jatuh Tempo             |
+    |   |                         |biaya_denda            |Denda                   |
+    |   |                         |alamat                 |Lokasi                  |
+    |   |                         |wilayah                |Kabupaten/Kota          |
+    |   |                         |kode_wilayah           |Kode Wilayah            |
+    |   |                         |luas_tanah             |Luas Tanah              |
+    |   |                         |luas_gedung            |Luas Gedung             |
+    |   |                         |kelurahan              |Kelurahan               |
+    |   |                         |kecamatan              |Kecamatan               |
+    |   |                         |kode_order             |Kode Order              |
+    |   |                         |                       |                        |
+    |14 |**ESAMSAT Jawa Barat**   |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |no_struk               |Nomor Resi              |
+    |   |                         |id_pelanggan           |Id Pelanggan            |
+    |   |                         |periode_bln_thn        |Periode                 |
+    |   |                         |biaya_admin            |Admin                   |
+    |   |                         |total_bayar            |Total bayar             |
+    |   |                         |nominal                |Tagihan                 |
+    |   |                         |no_polis               |No Polis                |
+    |   |                         |alamat                 |Alamat                  |
+    |   |                         |no_id                  |ID No                   |
+    |   |                         |no_milik               |Milik Kenama            |
+    |   |                         |no_rangka              |Nomor Rangka            |
+    |   |                         |no_mesin               |Nomor Mesin             |
+    |   |                         |nama_brand             |Merek Kb                |
+    |   |                         |model                  |Model Kb                |
+    |   |                         |tgl_manufaktur         |Tahun buatan            |
+    |   |                         |tgl_pkb                |Biaya pokok PKB         |
+    |   |                         |tgl_swd                |Biaya pokok SWD         |
+    |   |                         |tgl_bbn                |Biaya pokok BBN         |
+    |   |                         |biaya_denda_pkb        |Biaya Denda PKB         |
+    |   |                         |biaya_denda_swd        |Biaya Denda SWD         |
+    |   |                         |biaya_denda_bbn        |Biaya Denda BBN         |
+    |   |                         |biaya_admin_stnk       |Biaya Denda STNK        |
+    |   |                         |biaya_admin_tnks       |Biaya Denda tnkb        |
+    |   |                         |tgl_pajak_akhir        |Tanggal akhir pajak baru|
+    |   |                         |biaya_parkir_pokok     |Biaya parkir pokok      |
+    |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
+    |   |                         |ntpd                   |ntpd                    |
+  tags:
+    - Multibiller (PPOB)

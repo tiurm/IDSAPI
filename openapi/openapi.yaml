@@ -1,18 +1,93 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Example.com
-  termsOfService: 'https://example.com/terms/'
-  contact:
-    email: contact@example.com
-    url: 'http://example.com/contact'
-  license:
-    name: Apache 2.0
-    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-  x-logo:
-    url: 'https://redocly.github.io/openapi-template/logo.png'
+  title: API Documentation
+  
 
 tags:
+  - name: Multibiller (PPOB)
+    description: |
+       ## Purpose of This Document (PPOB)
+        This document elaborates upon the specifications and process flows that are used by aggregator and its partners to make a service payment point.
+
+        ### Scope (PPOB)
+        This document covers for each product:
+        * Normal and Abnormal Transaction Flows
+        * Message Formats together with their respective samples
+
+        The transaction flows in each product mainly revolve around the following functions:
+        * Inquiry
+        * Payment
+        * Advice or Reversal (subject to the product)
+
+        ### Target Audience (PPOB)
+        This document is targeted for use by merchants/partners/clients acting as Collecting Agents.
+
+        ## Interface Requiremetns (PPOB)
+        |Interface Requirements|                                                                                 |
+        |----------------------|---------------------------------------------------------------------------------|
+        |Protocol              |HTTP / HTTPS (Recommended)                                                       |
+        |Data Exchange Type    |JSON                                                                             |
+        |Method                |POST                                                                             |
+        |Inquiry URL           |https://xxx.xxx.xxx:xx/PPOBCa/webresources/inquiry (IP to be provided later)     |
+        |Payment URL           |https://xxx.xxx.xxx:xx/PPOBCa/webresources/payment (IP to be provided later)     |
+        |Advice URL            |https://xxx.xxx.xxx:xx/PPOBCa/webresources/advice (IP to be provided later)      |
+        |Reversal URL          |https://xxx.xxx.xxx:xx/PPOBCa/webresources/reversal (IP to be provided later)    |
+        |Port                  |To be provided later                                                             |
+        |PartnerID             |To be provided later                                                             |
+        |Password              |To be provided later                                                             |
+
+        ### Transaction Flow
+
+        #### Normal Transaction
+
+        ![Normal Transaction](../asset/normaltransaction.png)
+
+        ##### Explanation:
+
+        Inquiry: 
+
+        To make an inquiry, CA sends an Inquiry request message to aggregator, who in turn submits the message to Biller upon successfully authenticating its signature. Biller then responds with requested data (customer name total amount, response code 00) to aggregator, who in turn passes the data to CA, if the inquiry is successful.If failed, CA receives a response code other than 00.
+
+        Payment:                         
+
+        To make a payment, CA then sends a Payment request message (which includes requested data from the earlier Inquiry message) to aggregator, who in turn submits the message to Biller upon successfully authenticating its signature. Biller then responds with acknowledgement data (receipt code, response code 00) to aggregator, who in turn passes the data to CA, if the payment is successful. If failed, CA receives a response code other than 00.
+
+        #### Abnormal Transaction
+
+        ![Abnormal Transaction](../asset/normaltransaction.png)
+
+        ##### Explanation:
+
+        Advice: 
+
+        Advice requests are used to check if a payment is successful, in which case the customer receives a payment
+        reference number (receiptcode).
+
+          1. Auto Advice
+            
+              CA automatically sends an Advice request message to aggregator if:
+
+              a. there is no payment response after 30 seconds (in other words, timeout); or
+
+              b. CA receives RC (Response Code) 76.
+
+              Aggregator will in turn submit the message to Biller upon successfully authenticating its signature. Biller then responds with acknowledgement data (receipt code, response code 00) to aggregator, who in turn passes the data to CA, if the payment is successful. If failed, CA receives a response code other than 00.
+
+          2. Manual Advice
+            
+              Advice requests can be sent in a manual way to check if a payment is successful.
+
+        Reversal: 
+
+          Reversal requests are used to cancel a payment transaction. CA automatically sends a Reversal request message to aggregator if:
+
+          1. there is no payment response after 30 seconds (in other words, timeout); or
+
+          2. CA receives RC (Response Code) 76.
+
+          Aggregator will in turn submit the message to Biller upon successfully authenticating its signature. Biller then responds with acknowledgement data (such as Response Code 00, Reversal Reference Code) to aggregator, who in turn passes the data to CA, if the reversal is successful. If failed, CA receives a response code other than 00. The Reversal requests are sent up to a maximum of 3 times if a previous Reversal request still has not received a response message within a certain agreed timeframe (in this case, 30s).
+        
   - name: Echo
     description: Example echo operations.
   - name: User
@@ -27,6 +102,31 @@ servers:
         description: Your tenant id
   - url: 'https://example.com/api/v1'
 paths:
+
+  /Inquiry (PPOB): 
+    $ref: paths/inquiryPPOB.yaml
+
+  /Payment (PPOB):
+    $ref: paths/paymentPPOB.yaml
+
+  /Advice (PPOB):
+    $ref: paths/advicePPOB.yaml
+
+  /Reversal (PPOB):
+    $ref: paths/reversalPPOB.yaml
+
+  /Additional Notes: 
+    $ref: paths/additionalNotes.yaml
+  
+  /Products:
+    $ref: paths/products.yaml
+
+  /Signature (PPOB):
+    $ref: paths/signaturePPOB.yaml
+
+  /List of Response Codes(PPOB):
+    $ref: paths/listOfResponseCodesPPOB.yaml
+
   '/users/{username}':
     $ref: 'paths/users_{username}.yaml'
   /echo:

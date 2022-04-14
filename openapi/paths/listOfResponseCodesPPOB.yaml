@@ -1,0 +1,19 @@
+patch:
+  summary: List of Response Codes (PPOB)
+  tags:
+    - Multibiller (PPOB)
+
+  description: |
+    |Response |Description                                       |
+    |---------|--------------------------------------------------|
+    |00       |SUKSES                                            | 
+    |30       |Nomor Kontrak Salah/Tidak Ditemukan               |
+    |34       |Invalid Signature                                 |
+    |63       |REVERSAL                                          | 
+    |88       |Nomor Kontrak Sudah Dibayar                       |
+    |68       |Timeout expired                                   |
+    |40       |Gagal melakukan reversal                          |
+    |50       |Gagal melakukan pembayaran                        |
+    |90       |Sedang proses Cut-off, cobalah beberapa saat lagi |
+    |5        |Error lain (di sisi aggregator)                   |
+    |6        |Error lain (di sisi biller)                       |

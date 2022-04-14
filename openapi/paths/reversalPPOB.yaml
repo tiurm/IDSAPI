@@ -1,0 +1,129 @@
+post:
+  summary: Reversal 
+  tags:
+    - Multibiller (PPOB)
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            trxid:
+              type: string
+              example: A171103142648
+              description: Transaction ID
+              
+            trxdate:
+              type: string
+              example: 2017-11-0314:26:48
+              description: Transaction Date 
+              format: yyyy-MM-dd HH:mm:ss
+            
+            partnerid:
+              type: string
+              example: AMD
+              description: Partner ID
+            
+            productid:
+              type: string
+              example: PLNPOST
+              description: Product ID
+
+            customerid:
+              type: string
+              example: '171001324104'
+              description: Customer ID
+
+            extendInfo:
+              type: string
+              example: '0'
+              description: Other entry info apart from CustomerID if any.
+
+            trackingref:
+              type: string
+              example: A1103142245
+              description: Tracking Reference No Note = trackingref in Advice messages has to be the same as trackingref in Payment
+
+            terminalid:
+              type: string
+              example: IDS1
+              description: Terminal ID
+
+            signature:
+              type: string
+              example: 2d793818083e62e00505727fe30464c8ea355258
+              description: Signature Hash Value
+
+  responses:
+    "200":
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: "object"
+            properties:
+              trxid:
+                type: string
+                example: A171103142648
+                description: Transaction ID
+            
+              trxdate:
+                type: string
+                example: 2017-11-03 14:24:59
+                description: Transaction Date 
+                format: yyyy-MM-dd HH:mm:ss
+            
+              partnerid:
+                type: string
+                example: AMD
+                description: Partner ID
+              
+              productid:
+                type: string
+                example: PLNPOST
+                description: Product ID
+
+              customerid:
+                type: string
+                example: '171001324104'
+                description: Customer ID
+
+              extendInfo:
+                type: string
+                example: '0'
+                description: Other entry info apart from CustomerID if any.
+
+              receiptcode:
+                type: string
+                description: Payment Reference No 
+
+              additionaldata:
+                type: object
+                example: null
+                description: Additional Info
+
+              rc:
+                type: string
+                example: '63'
+                description: Response Code
+
+              rcdesc:
+                type: string
+                example: REVERSAL
+                description: Response Code Description
+              
+              trackingref:
+                type: string
+                example: A1103142245
+                description: Tracking Reference No Note = trackingref in Advice messages has to be the same as trackingref in Payment
+
+              terminalid:
+                type: string
+                example: IDS1
+                description: Terminal ID
+
+              signature:
+                type: string
+                example: 628a94fb75068f5c1a1175638d8a1c80ce1494a3
+                description: Signature Hash Value

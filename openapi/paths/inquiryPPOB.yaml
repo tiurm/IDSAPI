@@ -1,0 +1,138 @@
+post:
+  description: See [Additional Notes](#section/Respon-Inquiry) 
+  summary: Inquiry 
+  tags:
+    - Multibiller (PPOB)
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            trxid:
+              type: string
+              example: DEV1019170918
+              description: Transaction ID
+              
+            trxdate:
+              type: string
+              example: 2020-10-19 17:09:18
+              description: Transaction Date 
+              format: yyyy-MM-dd HH:mm:ss
+            
+            partnerid:
+              type: string
+              example: SHP
+              description: Partner ID
+            
+            productid:
+              type: string
+              example: BPFI
+              description: Product ID
+
+            customerid:
+              type: string
+              example: '0003721900053'
+              description: Customer ID
+
+            extendInfo:
+              type: string
+              example: ""
+              description: Other entry info apart from CustomerID if any.
+
+            trackingref:
+              type: string
+              example: '1019170918'
+              description: Tracking Reference No
+
+            terminalid:
+              type: string
+              example: SHOPEE
+              description: Terminal ID
+
+            signature:
+              type: string
+              example: 628a94fb75068f5c1a1175638d8a1c80ce1494a3
+              description: Signature Hash Value
+
+  responses:
+    "200":
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: "object"
+            properties:
+              trxid:
+                type: string
+                example: DEV1019170918
+                description: Transaction ID
+            
+              trxdate:
+                type: string
+                example: 2020-10-19 17:09:18
+                description: Transaction Date 
+                format: yyyy-MM-dd HH:mm:ss
+            
+              partnerid:
+                type: string
+                example: SHP
+                description: Partner ID
+              
+              productid:
+                type: string
+                example: BPFI
+                description: Product ID
+
+              customerid:
+                type: string
+                example: '0003721900053'
+                description: Customer ID
+
+              extendInfo:
+                type: string
+                example: ""
+                description: Other entry info apart from CustomerID if any.
+
+              customername:
+                type: string
+                example: FIRDAUS
+                description: Customer Name
+
+              totalamount:
+                type: string
+                example: '835000'
+                description: Total Amount
+
+              additionaldata_new:
+                type: string
+
+                example: "{\"id_pelanggan\":\"000372190053\",\"nama_pelanggan\":\"FIRDAUS\",\"biaya_admin\":\"15.000\",\"jumlah_tagihan\":\"800.000\",\"total_bayar\":\"835.000\",\"no_polis\":\"B 7373CYX\",\"tanggal_jatuh_tempo\":\"20190915\",\"biaya_denda\":\"20000\",\"angsuran_ke\":\"18\"}"
+
+                description:  Mengacu ke tabel additional data dibab 3.2.5
+
+              rc:
+                type: string
+                example: '00'
+                description: Response Code
+
+              rcdesc:
+                type: string
+                example: SUKSES
+                description: Response Code Description
+              
+              trackingref:
+                type: string
+                example: '1019170918'
+                description: Tracking Reference No
+
+              terminalid:
+                type: string
+                example: SHOPEE
+                description: Terminal ID
+
+              signature:
+                type: string
+                example: 628a94fb75068f5c1a1175638d8a1c80ce1494a3
+                description: Signature Hash Value

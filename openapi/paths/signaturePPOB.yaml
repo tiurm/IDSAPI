@@ -1,0 +1,31 @@
+patch:
+  summary: Signature (PPOB)
+  tags:
+    - Multibiller (PPOB)
+  description: |
+    To ensure security, one particular key, the field Signature, is implemented. It is the key check against requested data. This field is the result of the SHA1 encryption of a combination of all the other fields plus a password.
+
+    Signature = SHA1([Concat all the field values except Signature]+Password)
+
+    For example:
+
+    |Name                |Value                                     |
+    |--------------------|------------------------------------------|
+    |Trxid               |DEV1019170918                             |
+    |Trxdate             |2020-10-19 17:09:18                       |
+    |partnerid           |SHP                                       |
+    |productid           |BPFI                                      |
+    |customerid          |000372190053                              |
+    |extendinfo          |1                                         |
+    |trackingref         |1019170918                                |
+    |terminalid          |SHOPEE                                    |
+    |password            |cappob301214                              |
+    |signature           |628a94fb75068f5c1a1175638d8a1c80ce1494a3  |                                                                           
+
+    => Signature = SHA1([DEV1019170918+2020-10-19 17:09:18+SHP+BPFI+000372190053+1+1019170918
+    +SHOPEE]+cappob301214)
+
+    => Signature = SHA1([DEV10191709182020-10-
+    1917:09:18SHPBPFI00037219005311019170918SHOPEEcappob301214)
+
+    => Signature = 628a94fb75068f5c1a1175638d8a1c80ce1494a3

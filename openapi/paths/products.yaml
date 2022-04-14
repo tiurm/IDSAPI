@@ -1,0 +1,325 @@
+put: 
+  summary: Products
+  tags:
+    - Multibiller (PPOB)
+  
+  description: |
+    #### List Products
+
+    |Product ID   |Product Desc                 |Inquiry    |Payment    |Advice    |Reversal    |
+    |-------------|-----------------------------|-----------|-----------|----------|------------|
+    |PLNPRE       |Prepaid PLN                  |V          |V          |V         |-           |
+    |PLNPOST      |Prepaid PLN                  |V          |V          |V         |-           |
+    |0001         |Telkom                       |V          |V          |V         |-           |
+    |**Postpaid mobile**                                                                            |
+    |HPMTRIX      |INDOSAT OOREDO               |V          |V          |V         |-           |
+    |HPSMART      |SMARFREN                     |V          |V          |V         |-           |
+    |HPTSEL       |TELKOMSEL                    |V          |V          |V         |-           |
+    |HPXL         |XL                           |V          |V          |V         |-           |
+    |**Prepaid mobile**                                                                             |
+    |AXP25        |Axis Prabayar 25K            |-          |V          |V         |-           |
+    |AXP50        |Axis Prabayar 50K            |-          |V          |V         |-           |
+    |AS100        |KartuAs 100K                 |-          |V          |V         |-           |
+    |IMR100       |IM3 Regular 100K             |-          |V          |V         |-           |
+    |IMR20        |IM3 Regular 20K              |-          |V          |V         |-           |
+    |IMR25        |IM3 Regular 25K              |-          |V          |V         |-           |
+    |IMR50        |IM3 Regular 50K              |-          |V          |V         |-           |
+    |AS25         |KartuAs 25K                  |-          |V          |V         |-           |
+    |MR100        |Mentari Regular 100K         |-          |V          |V         |-           |
+    |MR20         |Mentari Regular 20K          |-          |V          |V         |-           |
+    |MR25         |Mentari Regular 25K          |-          |V          |V         |-           |
+    |MR50         |Mentari Regular 50K          |-          |V          |V         |-           |
+    |SFP100       |SmartFren Pra Bayar 100K     |-          |V          |V         |-           |
+    |SFP20        |SmartFren Pra Bayar 20K      |-          |V          |V         |-           |
+    |SFP25        |SmartFren Pra Bayar 25K      |-          |V          |V         |-           |
+    |SFP50        |SmartFren Pra Bayar 50K      |-          |V          |V         |-           |
+    |SIM100       |Simpati 100K                 |-          |V          |V         |-           |
+    |SIM20        |Simpati 20K                  |-          |V          |V         |-           |
+    |SIM25        |Simpati 25K                  |-          |V          |V         |-           |
+    |AS50         |KartuAs 50K                  |-          |V          |V         |-           |
+    |SIM50        |Simpati 50K                  |-          |V          |V         |-           |
+    |STR100       |STARONE 100K                 |-          |V          |V         |-           |
+    |STR50        |STARONE 50K                  |-          |V          |V         |-           |
+    |THP100       |Three Prabayar 100K          |-          |V          |V         |-           |
+    |THP20        |Three Prabayar 20K           |-          |V          |V         |-           |
+    |THP30        |Three Prabayar 30K           |-          |V          |V         |-           |
+    |THP50        |Three Prabayar 50K           |-          |V          |V         |-           |
+    |XLB50        |XL Bebas Xtra 50K            |-          |V          |V         |-           |
+    |AXP100       |Axis Prabayar 100K           |-          |V          |V         |-           |
+    |XLV100       |XL Voucher 100K              |-          |V          |V         |-           |
+    |XLV25        |XL Voucher 25K               |-          |V          |V         |-           |
+    |XLV50        |XL Voucher 50K               |-          |V          |V         |-           |
+    |**Voucher game**                                                                           |
+    |ML1H         |MOBILE LEGEND 36 DIAMOND     |-          |V          |V         |-           |                                                
+    |ML2H         |MOBILE LEGEND 74 DIAMOND     |-          |V          |V         |-           |
+    |ML3H         |MOBILE LEGEND 110 DIAMOND    |-          |V          |V         |-           |
+    |ML4H         |MOBILE LEGEND 184 DIAMOND    |-          |V          |V         |-           |
+    |ML5H         |MOBILE LEGEND 366 DIAMOND    |-          |V          |V         |-           |
+    |ML6H         |MOBILE LEGEND 758 DIAMOND    |-          |V          |V         |-           |
+    |ML7H         |MOBILE LEGEND 1159 DIAMOND   |-          |V          |V         |-           |
+    |ML8H         |MOBILE LEGEND 2010 DIAMOND   |-          |V          |V         |-           |
+    |GRN100H      |GARENA SHELLS 100.000        |-          |V          |V         |-           |
+    |GRN10H       |GARENA SHELLS 10.000         |-          |V          |V         |-           |
+    |GRN20H       |GARENA SHELLS 20.000         |-          |V          |V         |-           |
+    |GRN50H       |GARENA SHELLS 50.000         |-          |V          |V         |-           |
+    |GS100H       |GEMSCOOL 100.000             |-          |V          |V         |-           |
+    |GS10H        |GEMSCOOL 10.000              |-          |V          |V         |-           |
+    |GS200H       |GEMSCOOL 200.000             |-          |V          |V         |-           |
+    |GS20H        |GEMSCOOL 20.000              |-          |V          |V         |-           |
+    |GS300H       |EMSCOOL 300.000              |-          |V          |V         |-           |
+    |GS30H        |GEMSCOOL 30.000              |-          |V          |V         |-           |
+    |GS50H        |GEMSCOOL 50.000              |-          |V          |V         |-           |
+    |GUNI100H     |UNIPIN 100.000               |-          |V          |V         |-           |
+    |GUNI10H      |UNIPIN 10.000                |-          |V          |V         |-           |
+    |GUNI20H      |UNIPIN 20.000                |-          |V          |V         |-           |
+    |GUNI300H     |UNIPIN 300.000               |-          |V          |V         |-           |
+    |GUNI500H     |UNIPIN 500.000               |-          |V          |V         |-           |
+    |GUNI50H      |UNIPIN 50.000                |-          |V          |V         |-           |
+    |BSF100H      |BSF VOUCHER 100.000          |-          |V          |V         |-           |
+    |BSF10H       |BSF VOUCHER 10.000           |-          |V          |V         |-           |
+    |BSF25H       |BSF VOUCHER 25.000           |-          |V          |V         |-           |
+    |BSF500H      |BSF VOUCHER 500.000          |-          |V          |V         |-           |
+    |BSF50H       |BSF VOUCHER 50.000           |-          |V          |V         |-           |
+    |BSF5H        |BSF VOUCHER 5.000            |-          |V          |V         |-           |
+    |FBGC100H     |VOUCHER FB GAME 100.000      |-          |V          |V         |-           |
+    |FBGC30H      |VOUCHER FB GAME 30.000       |-          |V          |V         |-           |
+    |FBGC50H      |VOUCHER FB GAME 50.000       |-          |V          |V         |-           |
+    |GAR1030H     |AERIA 1.030 POINT            |-          |V          |V         |-           |
+    |GAR11600H    |AERIA 11.600 POINT           |-          |V          |V         |-           |
+    |GAR2100H     |AERIA 2.100 POINT            |-          |V          |V         |-           |
+    |GAR3240H     |AERIA 3.240 POINT            |-          |V          |V         |-           |
+    |GAR510H      |AERIA 510 POINT              |-          |V          |V         |-           |
+    |GAR5500H     |AERIA 5.500 POINT            |-          |V          |V         |-           |
+    |GAR8550H     |AERIA 8.550 POINT            |-          |V          |V         |-           |
+    |GDG100H      |DASA COIN 100.000            |-          |V          |V         |-           |
+    |GDG10H       |DASA COIN 10.000             |-          |V          |V         |-           |
+    |GDG20H       |DASA COIN 20.000             |-          |V          |V         |-           |
+    |GDG50H       |DASA COIN 50.000             |-          |V          |V         |-           |
+    |GGW100H      |VCASH 100.000                |-          |V          |V         |-           |
+    |GGW200H      |VCASH 200.000                |-          |V          |V         |-           |
+    |GGW500H      |VCASH 500.000                |-          |V          |V         |-           |
+    |GGW50H       |VCASH 50.000                 |-          |V          |V         |-           |
+    |GIH100H      |IAH GAMES 100.000            |-          |V          |V         |-           |
+    |GIH10H       |IAH GAMES 10.000             |-          |V          |V         |-           |
+    |GIH20H       |IAH GAMES 20.000             |-          |V          |V         |-           |
+    |GIH50H       |IAH GAMES 50.000             |-          |V          |V         |-           |
+    |GIN100H      |INCASH 100.000               |-          |V          |V         |-           |
+    |GIN10H       |INCASH 10.000                |-          |V          |V         |-           |
+    |GIN20H       |INCASH 20.000                |-          |V          |V         |-           |
+    |GIN50H       |GAME WEB VOUCHER 100.000     |-          |V          |V         |-           |
+    |GMB10H       |GAME WEB VOUCHER 10.000      |-          |V          |V         |-           |
+    |GMB20H       |GAME WEB VOUCHER 20.000      |-          |V          |V         |-           |
+    |GMB50H       |GAME WEB VOUCHER 50.000      |-          |V          |V         |-           |
+    |GMM100H      |MCASH 100.000                |-          |V          |V         |-           |
+    |GMM10H       |MCASH 10.000                 |-          |V          |V         |-           |
+    |GMM200H      |MCASH 200.000                |-          |V          |V         |-           |
+    |GMM25H       |MCASH 50.000                 |-          |V          |V         |-           |
+    |GMM5H        |MCASH 5.000                  |-          |V          |V         |-           |
+    |GMWV1500H    |GAME WAVE V1500              |-          |V          |V         |-           |
+    |GMWV150H     |GAME WAVE V150               |-          |V          |V         |-           |
+    |GMWV3000H    |GAME WAVE V3000              |-          |V          |V         |-           |
+    |GMWV300H     |GAME WAVE V300               |-          |V          |V         |-           |
+    |GMWV600H     |GAME WAVE V600               |-          |V          |V         |-           |
+    |GOG100H      |ORANGE GAME 100.000          |-          |V          |V         |-           |
+    |GOG10H       |ORANGE GAME 10.000           |-          |V          |V         |-           |
+    |GOG30H       |ORANGE GAME 30.000           |-          |V          |V         |-           |
+    |GOG50H       |ORANGE GAME 50.000           |-          |V          |V         |-           |
+    |GOV100H      |GOL ONLINE V100              |-          |V          |V         |-           |
+    |GOV10H       |GOL ONLINE V10               |-          |V          |V         |-           |
+    |GOV20H       |GOL ONLINE V20               |-          |V          |V         |-           |     
+    |GOV50H       |GOL ONLINE V50               |-          |V          |V         |-           |
+    |GP100H       |GOOGLEPLAY $100              |-          |V          |V         |-           |
+    |GP10H        |GOOGLEPLAY $10               |-          |V          |V         |-           |
+    |GP15H        |GOOGLEPLAY $15               |-          |V          |V         |-           |
+    |GP25H        |GOOGLEPLAY $25               |-          |V          |V         |-           |
+    |GP50H        |GOOGLEPLAY $50               |-          |V          |V         |-           |
+    |GPD100H      |DIGICASH 100.000             |-          |V          |V         |-           |
+    |GPD10H       |DIGICASH 10.000              |-          |V          |V         |-           |
+    |GPD20H       |DIGICASH 20.000              |-          |V          |V         |-           |
+    |GPD250H      |DIGICASH 250.000             |-          |V          |V         |-           |
+    |GPD50H       |DIGICASH 50.000              |-          |V          |V         |-           |
+    |GPY100H      |PLAY POINT 100.000           |-          |V          |V         |-           |
+    |GPY10H       |PLAY POINT 10.000            |-          |V          |V         |-           |
+    |GPY30H       |PLAY POINT 30.000            |-          |V          |V         |-           |
+    |GPY50H       |PLAY POINT 50.000            |-          |V          |V         |-           |
+    |GQN100H      |QASH 100.000                 |-          |V          |V         |-           |
+    |GQN10H       |QASH 10.000                  |-          |V          |V         |-           |
+    |GQN30H       |QASH 30.000                  |-          |V          |V         |-           |
+    |GQN50H       |QASH 50.000                  |-          |V          |V         |-           |
+    |GRB100H      |RAPPELZ POINT 100.000        |-          |V          |V         |-           |
+    |GRB10H       |RAPPELZ POINT 10.000         |-          |V          |V         |-           |
+    |GRB20H       |RAPPELZ POINT 20.000         |-          |V          |V         |-           |
+    |GRB50H       |RAPPELZ POINT 50.000         |-          |V          |V         |-           |
+    |GWW100H      |WAVEGAME 100.000             |-          |V          |V         |-           |
+    |GWW10H       |WAVEGAME 10.000              |-          |V          |V         |-           |
+    |GWW20H       |WAVEGAME 20.000              |-          |V          |V         |-           |
+    |GWW250H      |WAVEGAME 250.000             |-          |V          |V         |-           |
+    |GWW50H       |WAVEGAME 50.000              |-          |V          |V         |-           |
+    |ITN100H      |itunes $100                  |-          |V          |V         |-           |
+    |ITN10H       |itunes $10                   |-          |V          |V         |-           |
+    |ITN15H       |itunes $15                   |-          |V          |V         |-           |
+    |ITN25H       |itunes $25                   |-          |V          |V         |-           |           
+    |ITN50H       |itunes $50                   |-          |V          |V         |-           |
+    |KWC100H      |KIWICARD 100.000             |-          |V          |V         |-           |
+    |KWC10H       |KIWICARD 10.000              |-          |V          |V         |-           |
+    |KWC200H      |KIWICARD 200.000             |-          |V          |V         |-           |
+    |KWC20H       |KIWICARD 20.000              |-          |V          |V         |-           |
+    |KWC300H      |KIWICARD 300.000             |-          |V          |V         |-           |
+    |KWC30H       |KIWICARD 30.000              |-          |V          |V         |-           | 
+    |KWC50H       |KIWICARD 50.000              |-          |V          |V         |-           |
+    |LY10H        |LYTO 10.000                  |-          |V          |V         |-           |
+    |LY175H       |LYTO 175.000                 |-          |V          |V         |-           |
+    |LY20H        |LYTO 20.000                  |-          |V          |V         |-           |
+    |LY35H        |LYTO 35.000                  |-          |V          |V         |-           |
+    |LY65H        |LYTO 65RB                    |-          |V          |V         |-           |
+    |MEV120H      |METIN2VOUCHER 120.000        |-          |V          |V         |-           |
+    |MEV285H      |METIN2VOUCHER 285.000        |-          |V          |V         |-           |
+    |MEV545H      |METIN2VOUCHER 545.000        |-          |V          |V         |-           | 
+    |MEV60H       |METIN2VOUCHER 60.000         |-          |V          |V         |-           | 
+    |MOG100H      |MOGPLAYVOUCHER 100.000       |-          |V          |V         |-           |
+    |MOG20H       |MOGPLAYVOUCHER 20.000        |-          |V          |V         |-           |
+    |MOG50H       |MOGPLAYVOUCHER 50.000        |-          |V          |V         |-           |
+    |MOGCAZ100H   |MOGCAZ v100                  |-          |V          |V         |-           |
+    |MOGCAZ200H   |MOGCAZ v200                  |-          |V          |V         |-           |
+    |MOGCAZ50H    |MOGCAZ v50                   |-          |V          |V         |-           |
+    |MOL10000H    |MOLPOINT 1.000.000           |-          |V          |V         |-           |           
+    |MOL100H      |MOLPOINT 100.000             |-          |V          |V         |-           |
+    |MOL10H       |MOLPOINT 10.000              |-          |V          |V         |-           |
+    |MOL200H      |MOLPOINT 200.000             |-          |V          |V         |-           | 
+    |MOL20H       |MOLPOINT 20.000              |-          |V          |V         |-           |
+    |MOL500H      |MOLPOINT 500.000             |-          |V          |V         |-           | 
+    |MOL50H       |MOLPOINT 50.000              |-          |V          |V         |-           |
+    |MS100H       |MEGAXUS 100.000              |-          |V          |V         |-           | 
+    |MS10H        |MEGAXUS 10.000               |-          |V          |V         |-           |
+    |MS200H       |MEGAXUS 200.000              |-          |V          |V         |-           |
+    |MS20H        |MEGAXUS 20.000               |-          |V          |V         |-           |
+    |MS500H       |MEGAXUS 500.000              |-          |V          |V         |-           | 
+    |MS50H        |MEGAXUS 50.000               |-          |V          |V         |-           |
+    |PLF100H      |PLAYFISHVOUCHER 100.000      |-          |V          |V         |-           |
+    |PLF20H       |PLAYFISHVOUCHER 20.000       |-          |V          |V         |-           |
+    |PLF50H       |PLAYFISHVOUCHER 50.000       |-          |V          |V         |-           |
+    |STGC10H      |STEAM GIFTCARD 90.000        |-          |V          |V         |-           |
+    |STGC15H      |STEAM GIFTCARD 120.000       |-          |V          |V         |-           |
+    |STGC1H       |STEAM GIFTCARD 12.000        |-          |V          |V         |-           |
+    |STGC25H      |STEAM GIFTCARD 250.000       |-          |V          |V         |-           |
+    |STGC40H      |STEAM GIFTCARD 400000        |-          |V          |V         |-           |
+    |STGC5H       |STEAM GIFTCARD 45.000        |-          |V          |V         |-           |
+    |STGC60H      |STEAM GIFTCARD 600.000       |-          |V          |V         |-           |
+    |STGC7H       |STEAM GIFTCARD 60.000        |-          |V          |V         |-           | 
+    |STWC120H     |STEAM WALLET 120.000         |-          |V          |V         |-           |
+    |STWC12H      |STEAM WALLET 12.000          |-          |V          |V         |-           |
+    |STWC250H     |STEAM WALLET 250.000         |-          |V          |V         |-           |
+    |STWC400H     |STEAM WALLET 400.000         |-          |V          |V         |-           |
+    |STWC45H      |STEAM WALLET 45.000          |-          |V          |V         |-           |
+    |STWC600H     |STEAM WALLET 600.000         |-          |V          |V         |-           |
+    |STWC60H      |STEAM WALLET 60.000          |-          |V          |V         |-           |
+    |STWC90H      |STEAM WALLET 90.000          |-          |V          |V         |-           |
+    |TRA137H      |TRAVIANVOUCHER 137.000       |-          |V          |V         |-           |
+    |TRA265H      |TRAVIANVOUCHER 265.000       |-          |V          |V         |-           | 
+    |TRA27H       |TRAVIANVOUCHER 27.000        |-          |V          |V         |-           |
+    |TRA63H       |TRAVIANVOUCHER 63.000        |-          |V          |V         |-           |
+    |VWW1000H     |VIWAWA 1000                  |-          |V          |V         |-           |
+    |VWW100H      |VIWAWA 100                   |-          |V          |V         |-           |
+    |VWW2000H     |VIWAWA 2000                  |-          |V          |V         |-           |
+    |VWW250H      |VIWAWA 250                   |-          |V          |V         |-           |
+    |VWW500H      |VIWAWA 500                   |-          |V          |V         |-           |
+    |ZY100H       |ZYNGA 100.000                |-          |V          |V         |-           |
+    |ZY20H        |ZYNGA 20.000                 |-          |V          |V         |-           | 
+    |ZY50H        |ZYNGA 50.000                 |-          |V          |V         |-           |
+    |**Multifinance**                                                                               |
+    |MCF          |MCF                          |V          |V          |V         |-           |
+    |MAF          |MAF                          |V          |V          |V         |-           |
+    |MF           |MF                           |V          |V          |V         |-           |
+    |SMF          |Smart Finance                |V          |V          |V         |-           |
+    |WKF          |WOKA FINANCE                 |V          |V          |V         |-           |
+    |CVK          |KAMM                         |V          |V          |V         |-           |
+    |ALF          |Alijarah                     |V          |V          |V         |-           |
+    |APF          |Arta Prima Finance           |V          |V          |V         |-           |
+    |BMF          |Bima Finance                 |V          |V          |V         |-           |
+    |BPRKM        |BPR Kredit Finance           |V          |V          |V         |-           |
+    |TGR          |Tiga Raksa                   |V          |V          |V         |-           |
+    |TRH          |Trihamas                     |V          |V          |V         |-           |
+    |MTF          |Mandiri Tunas Finance        |V          |V          |V         |-           |
+    |TOP          |Mitra Dana Top Finance       |V          |V          |V         |-           |
+    |GBL          |Globalindo Multifinance      |V          |V          |V         |-           |
+    |EDV          |Esta Dana Ventura            |V          |V          |V         |-           |
+    |MBF          |Mizuho Balimor Finance       |V          |V          |V         |-           |
+    |TNK          |Tunaiku                      |V          |V          |V         |-           |
+    |AMM          |Koperasi Anugerah Mega Multidana |V          |V          |V         |-           |
+    |PMT          |Permata Finance              |V          |V          |V         |-           |
+    |MDL          |Mandala                      |V          |V          |V         |-           |
+    |TPF          |Transpasific Finance         |V          |V          |V         |-           |
+    |BPFI         |Batavia Properindo Finance   |V          |V          |V         |-           |  
+    |CITRA        |Cakrawala Citramega Multifinance |V          |V          |V         |-           |
+    |NRC          |Koperasi Nusa Raya Cipta     |V          |V          |V         |-           |
+    |**TV CABLE**                                                                                   |
+    |TVBIG        |BIG TV                       |V          |V          |V         |-           | 
+    |TVINDVS      |INDOVISION                   |V          |V          |V         |-           |
+    |TVINDVS      |TOP TV                       |V          |V          |V         |-           |
+    |TVNEX        |NEX MEDIA                    |V          |V          |V         |-           |
+    |TVORG100     |ORANGE TV (100.000)          |V          |V          |V         |-           |
+    |TVORG300     |ORANGE TV (300.000)          |V          |V          |V         |-           |
+    |TVORG50      |ORANGE TV (50.000)           |V          |V          |V         |-           |  
+    |TVORG80      |ORANGE TV (80.000)           |V          |V          |V         |-           |
+    |TVORANGE     |TV ORANGE POSTPAID           |V          |V          |V         |-           |
+    |TVTLKMV      |TRANSVISION                  |V          |V          |V         |-           |
+    |TVTLKMV      |TELKOMVISION                 |V          |V          |V         |-           |  
+    |TVTLKMV      |YESTV                        |V          |V          |V         |-           |
+    |TVINDVS      |OKE VISION                   |V          |V          |V         |-           |  
+    |**Insurance**                                                                                  |
+    |BPJSKS       |BPJS Kesehatan               |V          |V          |V         |-           |
+    |ASRBINT1     |ASURANSI BINTANG PAKET 1     |V          |V          |V         |-           |
+    |ASRBINT2     |ASURANSI BINTANG PAKET 2     |V          |V          |V         |-           |
+    |ASRJWS       |ASURANSI JIWASRAYA           |V          |V          |V         |-           |
+    |ASRPRU       |PRUDENTIAL PREMI LANJUTAN    |V          |V          |V         |-           |
+    |ASRTOKIO     |TOKIO MARINE (SemuaTagihan)  |V          |V          |V         |-           |
+    |ASRTOKIOS    |TOKIO MARINE (SatuTagihan)   |V          |V          |V         |-           |
+    |**PDAM**                                                                                       |
+    |1027         |PDAM Tapin                   |V          |V          |V         |-           |
+    |1028         |PDAM Semarang                |V          |V          |V         |-           |
+    |1029         |PDAM Bangkalan               |V          |V          |V         |-           |
+    |1031         |PDAM Kab Mojokerto           |V          |V          |V         |-           |
+    |1032         |PDAM Kab Sidoarjo            |V          |V          |V         |-           |
+    |1030         |PDAM PDAM Kab Bojonegoro     |V          |V          |V         |-           |
+    |1026         |PDAM Jember                  |V          |V          |V         |-           |
+    |1025         |PDAM Kab Kasleman            |V          |V          |V         |-           |
+    |1022         |PDAM Kab Malang              |V          |V          |V         |-           |
+    |1020         |PDAM Surabaya                |V          |V          |V         |-           |
+    |1018         |PDAM Kab Bogor               |V          |V          |V         |-           |
+    |1013         |PDAM Makassar                |V          |V          |V         |-           | 
+    |1012         |PDAM Cilacap                 |V          |V          |V         |-           | 
+    |1007         |PDAM Aetra                   |V          |V          |V         |-           |
+    |1006         |PDAM Palyja                  |V          |V          |V         |-           |
+    |9008         |PDAM Bandung                 |V          |V          |V         |-           |
+    |9033         |PDAM Lampung                 |V          |V          |V         |-           |
+    |9034         |PDAM Mataram                 |V          |V          |V         |-           |
+    |9005         |PDAM Palembang               |V          |V          |V         |-           |
+    |PDAMDKIAETRA |PDAM DKIAETRA                |V          |V          |V         |-           |
+    |**PBB**                                                                                        |
+    |PBBKOT.BOGOR         |PBB Kota Bogor       |V          |V          |V         |-           |
+    |PBBKOT.CIMAHI        |PBB Kota Cimahi      |V          |V          |V         |-           | 
+    |PBBKOT.DEPOK         |PBB Kota Depok       |V          |V          |V         |-           |
+    |PBBKOT.BEKASI        |PBB Kota Bekasi      |V          |V          |V         |-           |  
+    |PBBKOT.BANDUNG       |PBB Kota Bandung     |V          |V          |V         |-           |
+    |PBBKOT.BANJAR        |PBB Kota Banjar      |V          |V          |V         |-           | 
+    |PBBKOT.CIREBON       |PBB Kota Cirebon     |V          |V          |V         |-           |
+    |PBBKOT.SUKABUMI      |PBB Kota Sukabumi    |V          |V          |V         |-           |
+    |PBBKAB.BANDUNG       |PBB Kabupaten Bandung|V          |V          |V         |-           |  
+    |PBBKAB.BANDUNGBARAT  |PBB Kabupaten Bandung Barat |V          |V          |V         |-           |
+    |PBBKAB.SUBANG        |PBB Kabupaten Subang  |V          |V          |V         |-           |  
+    |PBBKAB.BOGORCIBINONG |PBB Kabupaten Bogor Cibinong |V          |V          |V         |-           |
+    |PBBKAB.CIAMIS        |PBB Kabupaten Ciamis  |V          |V          |V         |-           |
+    |PBBKAB.CIANJUR       |PBB Kabupaten Cianjur |V          |V          |V         |-           |
+    |PBBKAB.PURWAKARTA    |PBB Kabupaten Purwakarta |V          |V          |V         |-           |
+    |PBBKAB.SUKABUMI      |PBB Kabupaten Sukabumi|V          |V          |V         |-           |  
+    |PBBKAB.SUMEDANG      |PBB Kabupaten Sumedang|V          |V          |V         |-           |
+    |PBBKAB.CIREBON       |PBB Kabupaten Cirebon |V          |V          |V         |-           |
+    |PBBKAB.GARUT         |PBB Kabupaten Garut   |V          |V          |V         |-           |
+    |PBBKAB.INDRAMAYU     |PBB Kabupaten Indramayu|V          |V          |V         |-           | 
+    |PBBKAB.KARAWANG      |PBB Kabupaten Karawang|V          |V          |V         |-           |
+    |PBBKAB.KUNINGAN      |PBB Kabupaten Kuningan|V          |V          |V         |-           |
+    |PBBKAB.MAJALENGKA    |PBB Kabupaten Majalengka |V          |V          |V         |-           |
+    |PBBKAB.TASIKMALAYA   |PBB Kabupaten Tasikmalaya|V          |V          |V         |-           |
+    |PBBKAB.PANGANDARAN   |PBB Kabupaten Pangandaran|V          |V          |V         |-           |
+    |**ESAMSAT**                                                                                        |
+    |ESAMSAT. JAWABARAT   |ESAMSAT Jawa Barat       |V          |V          |V         |-           |
