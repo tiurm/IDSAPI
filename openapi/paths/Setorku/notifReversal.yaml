@@ -1,7 +1,7 @@
 post: 
   summary: Notif Reversal           
   tags:
-    - Merchant's Notify API
+    - Setorku
 
   requestBody:
     required: true
