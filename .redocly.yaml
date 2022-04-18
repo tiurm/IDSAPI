@@ -18,6 +18,8 @@ features.openapi:
       fontSize: 17px
       borderRadius: 10px
       activeTextColor: blue
+      spacing:
+        unit: 12px
     typography:
       fontSize: 17px
       heading1:
