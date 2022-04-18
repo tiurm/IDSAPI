@@ -15,7 +15,7 @@ features.openapi:
       primary:
         main: "#32329f"
     sidebar:
-      fontSize: 15px
+      fontSize: 17px
       borderRadius: 10px
       activeTextColor: blue
     typography:
