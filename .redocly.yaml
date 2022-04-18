@@ -29,7 +29,7 @@ features.openapi:
         lineHeight: 2.5em
       heading4:
         lineHeight: 2.5em
-  
+
   onlyRequiredInSamples: true
 
   expandResponses: '200'
