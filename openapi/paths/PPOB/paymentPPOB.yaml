@@ -116,7 +116,7 @@ post:
                 type: object
                 example: JSON Object:{"id_pelanggan":"000372190053","nama_pelanggan":"FIRDAUS","biaya_admin":"15.000","jumlah_tagihan":"800.000","total_bayar":"835.000","no_polis":"B 7373CYX","tanggal_jatuh_tempo":"20190915","biaya_denda":"20.000","nama_produk":"BataviaFinance","angsuran_ke":"18","no_struk":"SHP000372190053161701","tanggal_lunas":"2020-10-19 17:16:17"}
                 
-                description: Mengacu ke tabel additional data dibab 3.2.5
+                description: Mengacu ke tabel additional data pada bagian additional notes
 
               rc:
                 type: string
