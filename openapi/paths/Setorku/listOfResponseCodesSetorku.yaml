@@ -21,14 +21,14 @@ put:
 
     ### Merchant's Notify API Response Codes
 
-    #### NotifPayment 
+    NotifPayment 
 
     |Response |Description              |
     |---------|-------------------------|
     |00       |SUCCESS                  |
     |05       |ERROR                    |
 
-    #### NotifReversal
+    NotifReversal
 
     |Response |Description              |
     |---------|-------------------------|

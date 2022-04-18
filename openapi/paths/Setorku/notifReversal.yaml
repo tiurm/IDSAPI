@@ -1,5 +1,6 @@
 post: 
   summary: Notif Reversal           
+  description: This API is provided by Merchant. It will be called by IDS to notify Merchant about the status of the order payment made by Merchant's Collector.       
   tags:
     - Setorku
 
