@@ -2,9 +2,6 @@ put:
   summary: Additional Notes
   tags:
       - Multibiller (PPOB)
-    
-  requestBody:
-    required: false 
   description: |
     * All fields are case-insensitive.
     * Rows in the RESPONSE table that that are in gray indicate that the fields have the same value as those in the REQUEST table.
