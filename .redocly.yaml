@@ -30,7 +30,7 @@ features.openapi:
       heading4:
         lineHeight: 2.5em
 
-  onlyRequiredInSamples: true
+  hideSingleRequestSampleTab: true
 
   expandResponses: '200'
 
