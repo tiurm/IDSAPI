@@ -7,6 +7,8 @@ put:
 
     Signature = SHA1([Concat all the field values except Signature]+Password)
 
+    <br>
+
     For example:
 
     |Name                |Value                                     |
@@ -29,3 +31,6 @@ put:
     1917:09:18SHPBPFI00037219005311019170918SHOPEEcappob301214)
 
     => Signature = 628a94fb75068f5c1a1175638d8a1c80ce1494a3
+
+    <br>
+    <br>

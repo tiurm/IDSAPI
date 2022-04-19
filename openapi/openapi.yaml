@@ -13,6 +13,9 @@ tags:
       ## Purpose of This Document - PPOB
       This document elaborates upon the specifications and process flows that are used by aggregator and its partners to make a service payment point.
 
+      <br>
+      <br>
+
       ### Scope 
       This document covers for each product:
       * Normal and Abnormal Transaction Flows
@@ -23,44 +26,52 @@ tags:
       * Payment
       * Advice or Reversal (subject to the product)
 
+      <br>
+      <br>
+
       ### Target Audience 
       This document is targeted for use by merchants/partners/clients acting as Collecting Agents.
 
-      ## Interface Requiremetns - PPOB
-      |Interface Requirements|                                                                                 |
-      |----------------------|---------------------------------------------------------------------------------|
-      |Protocol              |HTTP / HTTPS (Recommended)                                                       |
-      |Data Exchange Type    |JSON                                                                             |
-      |Method                |POST                                                                             |
-      |Inquiry URL           |https://xxx.xxx.xxx:xx/PPOBCa/webresources/inquiry (IP to be provided later)     |
-      |Payment URL           |https://xxx.xxx.xxx:xx/PPOBCa/webresources/payment (IP to be provided later)     |
-      |Advice URL            |https://xxx.xxx.xxx:xx/PPOBCa/webresources/advice (IP to be provided later)      |
-      |Reversal URL          |https://xxx.xxx.xxx:xx/PPOBCa/webresources/reversal (IP to be provided later)    |
-      |Port                  |To be provided later                                                             |
-      |PartnerID             |To be provided later                                                             |
-      |Password              |To be provided later                                                             |
+      <br>
+      <br>
 
-      ### Transaction Flow
+      ## Flow - PPOB
+      
+      <br>
+      <br>
 
-      #### Normal Transaction
+      ### Normal Transaction
 
       ![Normal Transaction](../asset/normaltransaction.png)
 
-      ##### Explanation:
+      <br>
+
+      #### Explanation:
+
+      <br>
 
       Inquiry: 
 
       To make an inquiry, CA sends an Inquiry request message to aggregator, who in turn submits the message to Biller upon successfully authenticating its signature. Biller then responds with requested data (customer name total amount, response code 00) to aggregator, who in turn passes the data to CA, if the inquiry is successful. If failed, CA receives a response code other than 00.
 
+      <br>
+
       Payment:                         
 
       To make a payment, CA then sends a Payment request message (which includes requested data from the earlier Inquiry message) to aggregator, who in turn submits the message to Biller upon successfully authenticating its signature. Biller then responds with acknowledgement data (receipt code, response code 00) to aggregator, who in turn passes the data to CA, if the payment is successful. If failed, CA receives a response code other than 00.
 
-      #### Abnormal Transaction
+      <br>
+      <br>
+
+      ### Abnormal Transaction
 
       ![Abnormal Transaction](../asset/normaltransaction.png)
 
-      ##### Explanation:
+      <br>
+
+      #### Explanation:
+
+      <br>
 
       Advice: 
 
@@ -81,6 +92,9 @@ tags:
           
             Advice requests can be sent in a manual way to check if a payment is successful.
 
+      <br>
+      <br>
+
       Reversal: 
 
         Reversal requests are used to cancel a payment transaction. CA automatically sends a Reversal request message to aggregator if:
@@ -90,6 +104,23 @@ tags:
         2. CA receives RC (Response Code) 76.
 
         Aggregator will in turn submit the message to Biller upon successfully authenticating its signature. Biller then responds with acknowledgement data (such as Response Code 00, Reversal Reference Code) to aggregator, who in turn passes the data to CA, if the reversal is successful. If failed, CA receives a response code other than 00. The Reversal requests are sent up to a maximum of 3 times if a previous Reversal request still has not received a response message within a certain agreed timeframe (in this case, 30s).
+      
+      <br>
+      <br>
+
+      ## Interface Requirements - PPOB
+      |Interface Requirements|                                                                                 |
+      |----------------------|---------------------------------------------------------------------------------|
+      |Protocol              |HTTP / HTTPS (Recommended)                                                       |
+      |Data Exchange Type    |JSON                                                                             |
+      |Method                |POST                                                                             |
+      |Inquiry URL           |https://xxx.xxx.xxx:xx/PPOBCa/webresources/inquiry (IP to be provided later)     |
+      |Payment URL           |https://xxx.xxx.xxx:xx/PPOBCa/webresources/payment (IP to be provided later)     |
+      |Advice URL            |https://xxx.xxx.xxx:xx/PPOBCa/webresources/advice (IP to be provided later)      |
+      |Reversal URL          |https://xxx.xxx.xxx:xx/PPOBCa/webresources/reversal (IP to be provided later)    |
+      |Port                  |To be provided later                                                             |
+      |PartnerID             |To be provided later                                                             |
+      |Password              |To be provided later                                                             |
       
   - name: Virtual Account
     description: |

@@ -132,6 +132,8 @@ put:
     |   |                         |biaya_pajak_progresif  |Biaya Pajak Progresif   |
     |   |                         |ntpd                   |ntpd                    |
     
+    <br>
+    <br>
 
     ### Respon Payment
 
@@ -326,6 +328,9 @@ put:
     |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
     |   |                         |ntpd                   |ntpd                    |
 
+    <br>
+    <br>
+
     ### Respon Advice
 
     |No |Product                  |Node                   |Description             |
@@ -512,4 +517,7 @@ put:
     |   |                         |biaya_parkir_pokok     |Biaya parkir pokok      |
     |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
     |   |                         |ntpd                   |ntpd                    |
+
+    <br>
+    <br>
   
