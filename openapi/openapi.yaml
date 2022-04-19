@@ -293,11 +293,11 @@ paths:
   /Reversal (PPOB):
     $ref: paths/PPOB/reversalPPOB.yaml
 
-  /Get Products Unipin: 
-    $ref: paths/PPOB/getProductsUnipin.yaml
+  /Get Products: 
+    $ref: paths/PPOB/getProducts.yaml
 
   /Get Products Detail Unipin: 
-    $ref: paths/PPOB/getProductsDetailUnipin.yaml
+    $ref: paths/PPOB/getProductsDetail.yaml
 
   /Get Products Stocks: 
     $ref: paths/PPOB/getProductStock.yaml
