@@ -3,6 +3,7 @@ put:
   tags:
     - Virtual Account
   description: |
+    --- 
     |Status              |Description                                                                                                                                 |
     |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
     |WAITING_PAYMENT     |This status means that VA is active and can receive a payment                                                                               |

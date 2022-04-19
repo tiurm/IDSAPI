@@ -1,0 +1,108 @@
+put:
+  summary: Get Products Detail Unipin
+  tags:
+    - Multibiller (PPOB)
+  
+  requestBody:
+    required: true 
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            productType:
+              type: string 
+              example: ingame
+              description: Tipe produk yang direquest “ingame” atau “voucher”
+
+            product_code: 
+              type: string 
+              example: MLBBD_ID 
+              description: Kode produk
+
+  responses:
+    "200" :
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              denominations:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    denomination_code: 
+                      type: string 
+                      description: Kode dari denominasi 
+                    
+                    denomination_name: 
+                      type: string 
+                      description: Nama dari denominasi 
+                    
+                    denomination_currency: 
+                      type: string 
+                      description: Mata uang dari denominasi 
+                    
+                    denomination_amount: 
+                      type: string 
+                      description: Jumlah dari denominasi 
+                    
+                example:
+                  - denomination_code: "28"
+                    denomination_name: 185 Diamonds 
+                    denomination_currency: IDR 
+                    denomination_amount: "50000.00"
+
+                  - denomination_code: "29"
+                    denomination_name: 222 Diamonds 
+                    denomination_currency: IDR 
+                    denomination_amount: "60000.00"
+
+              fields:   
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name: 
+                      type: string 
+                      description: "nama dari field, possible  field: userid, server, username"
+
+                    type: 
+                      type: string 
+                      description: "tipe input dari field, Available type of field: string, number and dropdown"
+
+                    data: 
+                      type: array 
+                      items:
+                        type: object
+                        properties:
+                          name: 
+                            type: string 
+                            description: nama pilihan data dalam input dropdown
+
+                          value: 
+                            type: string 
+                            description: value dari pilihan data dalam input dropdown
+
+                example: 
+                  - name: userid 
+                    type: string 
+
+                  - name: server 
+                    type: dropdown
+                    data: 
+                      example:
+                        - name: SERVER 1
+                          value: "4231002"
+                        
+                        - name: SERVER 2
+                          value: "4231003"
+
+                    
+
+                    
+
+
+

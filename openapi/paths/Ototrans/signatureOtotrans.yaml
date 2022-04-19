@@ -3,6 +3,7 @@ put:
   tags: 
     - Ototrans  
   description: |
+    ---
     **Request and response signatures**
 
     Signature= SHA1 (JSON request parameters+key)

@@ -23,7 +23,7 @@ features.openapi:
     typography:
       fontSize: 17px
       heading1:
-        color: '#250ce8'
+        color: '#002869'
         lineHeight: 0em
       heading2:
         lineHeight: 2.5em

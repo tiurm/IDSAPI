@@ -1,0 +1,59 @@
+put:
+  summary: Get Products Unipin
+  tags:
+    - Multibiller (PPOB)
+  
+  requestBody:
+    required: true 
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            productType:
+              type: string 
+              example: ingame
+              description: Tipe produk yang direquest “ingame” atau “voucher”
+
+  responses:
+    "200" :
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              product_list:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    product_category: 
+                      type: string 
+                      example: MLBB_ID
+                      description: Kode kategori game produk, kolom ini kosong apabila tipe product adalah voucher
+                    
+                    product_code: 
+                      type: string 
+                      example: MLBBD_ID
+                      description: Kode dari Produk 
+                    
+                    product_name: 
+                      type: string 
+                      example: Diamonds 
+                      description: Nama dari produk 
+
+                    game_name: 
+                      type: string 
+                      example: Mobile Legends Diamonds 
+                      description: Nama game, kolom ini dikosongkan apabila tipe product adalah voucher
+
+                    category_name: 
+                      type: string 
+                      example: Mobile Legends 
+                      description: Nama kategori game, kolom ini dikosongkan apabila tipe product adalah voucher
+
+                    
+
+
+

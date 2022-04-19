@@ -11,6 +11,7 @@ tags:
   - name: Multibiller (PPOB)
     description: |
       ## Purpose of This Document - PPOB
+      ---
       This document elaborates upon the specifications and process flows that are used by aggregator and its partners to make a service payment point.
 
       <br>
@@ -36,7 +37,7 @@ tags:
       <br>
 
       ## Flow - PPOB
-      
+      ---
       <br>
       <br>
 
@@ -109,6 +110,7 @@ tags:
       <br>
 
       ## Interface Requirements - PPOB
+      ---
       |Interface Requirements|                                                                                 |
       |----------------------|---------------------------------------------------------------------------------|
       |Protocol              |HTTP / HTTPS (Recommended)                                                       |
@@ -125,6 +127,7 @@ tags:
   - name: Virtual Account
     description: |
       ## Purpose of This Document - VA
+      ---
       This document elaborates upon the specifications and process flows that are used by PT. Inovasi Daya Solusi and its partners to make a service create virtual account.
 
       <br>
@@ -151,7 +154,7 @@ tags:
       <br>
 
       ## Flow - VA
-
+      ---
       <br>
       <br>
 
@@ -169,6 +172,7 @@ tags:
       <br>
 
       ## Interface Requirements - VA
+      ---
       |Interface Requirements|                                                                                 |
       |----------------------|---------------------------------------------------------------------------------|
       |Protocol              |HTTP / HTTPS (Recommended)                                                       |
@@ -182,6 +186,7 @@ tags:
   - name: Ototrans  
     description: |
       ## Purpose of This Document - Ototrans
+      ---
       This document elborates upon the specification and process flows that are used by PT Inovasi Daya Solusi and its partner to make a service payment point.
 
       <br>
@@ -209,11 +214,13 @@ tags:
       <br>
 
       ## Flow - Ototrans
+      ---
       ![Flow]()
 
   - name: Setorku 
     description: |
       ## Purpose of This Document - Setorku
+      ---
       This document elaborates upon the specifications and process flows that are used by PT. IDS and its partners to make a service deposit point.
 
       <br>
@@ -236,6 +243,7 @@ tags:
       <br>
 
       ## Flow - Setorku
+      ---
 
       <br>
       <br>
@@ -257,6 +265,7 @@ tags:
       <br>
 
       ## Interface Requirements - Setorku
+      ---
 
       |Interface Requirements|                                                                                 |
       |----------------------|---------------------------------------------------------------------------------|
@@ -283,6 +292,15 @@ paths:
 
   /Reversal (PPOB):
     $ref: paths/PPOB/reversalPPOB.yaml
+
+  /Get Products Unipin: 
+    $ref: paths/PPOB/getProductsUnipin.yaml
+
+  /Get Products Detail Unipin: 
+    $ref: paths/PPOB/getProductsDetailUnipin.yaml
+
+  /Get Products Stocks: 
+    $ref: paths/PPOB/getProductStock.yaml
 
   /Additional Notes: 
     $ref: paths/PPOB/additionalNotes.yaml

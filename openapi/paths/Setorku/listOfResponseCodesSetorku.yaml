@@ -3,6 +3,7 @@ put:
   tags:
     - Setorku 
   description: |
+    --- 
     ### IDS Create Store Code API Response Codes
 
     |Response |Description              |

@@ -1,0 +1,51 @@
+put:
+  summary: Get Product Stock
+  tags:
+    - Multibiller (PPOB)
+  
+  requestBody:
+    required: true 
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            signature: 
+              type: string 
+              example: b3108ab9222fd968e3043351adf1f9998e77f4bfbce5d0cbcc36bac826e1d858
+
+  responses:
+    "200" :
+      description: "Success"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              voucher_list:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    voucher_code: 
+                      type: string 
+                      description: kode Voucher 
+                    stock: 
+                      type: string 
+                      description: stock voucher 
+                
+                example:
+                  - voucher_code: PODGEMS_001
+                    stock: "212"
+
+                  - voucher_code: PODGEMS_002
+                    stock: "239"
+                  
+                  - voucher_code: PODGEMS_003
+                    stock: "348"
+                    
+
+                    
+
+
+

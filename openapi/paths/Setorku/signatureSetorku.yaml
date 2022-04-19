@@ -3,6 +3,7 @@ put:
   tags:
     - Setorku 
   description: |
+    ---
     ### IDS Create Store Code API Signature
 
       To ensure security, one particular key, the field Signature, is implemented. It is the key check against requested data. This field is the result of the SHA1 encryption of a combination of all the other fields, plus a password.
