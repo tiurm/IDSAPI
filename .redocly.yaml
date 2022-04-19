@@ -24,7 +24,7 @@ features.openapi:
       fontSize: 17px
       heading1:
         color: '#002869'
-        lineHeight: 0em
+        lineHeight: -1em
       heading2:
         lineHeight: 2.5em
       heading3:

@@ -1,4 +1,4 @@
-put:
+post:
   summary: Get Product Stock
   tags:
     - Multibiller (PPOB)

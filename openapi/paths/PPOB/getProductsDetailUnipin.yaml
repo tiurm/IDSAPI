@@ -1,4 +1,4 @@
-put:
+post:
   summary: Get Products Detail Unipin
   tags:
     - Multibiller (PPOB)
