@@ -9,6 +9,8 @@ put:
 
       **Signature = SHA1([Concat all the field values except Signature]+Password)**
 
+      <br>
+
       For Example: 
 
       |Name                |Value                                     |
@@ -34,7 +36,6 @@ put:
 
       <br>
       <br>
-      <br>
 
       ### Merchant's Notify API Signature
 
@@ -42,7 +43,11 @@ put:
 
       To ensure security, one particular key, the field Signature, is implemented. It is the key check against requested data. This field is the result of the SHA1 encryption of a combination of all the other fields, plus a password.
 
+      <br>
+
       **Signature = SHA1([Concat all the field values except Signature]+Password)**
+
+      <br>
 
       For example:
 
@@ -64,14 +69,18 @@ put:
 
       <br> 
       <br> 
-      <br>
 
       * #### Notif Reversal Signature
       
       To ensure security, one particular key, the field Signature, is implemented. It is the key check against requested data. This field is
 
       the result of the SHA1 encryption of a combination of all the other fields, plus a password.
+
+      <br>
+
       **Signature = SHA1([Concat all the field values except Signature]+Password)**
+      
+      <br>
 
       For example:
 
@@ -89,3 +98,6 @@ put:
       Signature = SHA1(17016004190032765000.002018031411383517732 TES 2018-03-14 11:38:35.0A180119102015 pass1234)
       
       **Signature** = 97b168118cddc03e72f9e728d64e54e1912a3618
+
+      <br>
+      <br>

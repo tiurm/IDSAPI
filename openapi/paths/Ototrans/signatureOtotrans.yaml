@@ -7,6 +7,8 @@ put:
 
     Signature= SHA1 (JSON request parameters+key)
 
+    <br>
+
     **Example: (InqReq)**
 
     Signature= SHA1(JSON body+key)
@@ -14,3 +16,6 @@ put:
     Signature = 20220216103510+2022-02-16 10:35:10+IDS+008+220216001+{\"bankCode\":\"008\",\"bankAccount\":\"8760673566\",\"amountTransfer\":\"100000\",\"purpose\":\"Test Transfer\",\"senderId\":\"220216001\",\"senderName\":\" Tester 1\"}+IDS20220216103510+IDS1+alfappob301214
 
     **Signature** = e16ebc6a088a31fae67726bdcb34b3fdcfa19427
+
+    <br>
+    <br>

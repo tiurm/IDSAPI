@@ -7,6 +7,8 @@ put:
 
     **Signature = SHA1([Concat all the field values except signature] + Password)**
 
+    <br>
+
     For example:
 
     |Name                |Value                                     |
@@ -29,3 +31,6 @@ put:
     => Signature = **SHA1(DMY202105281316362242021-07-09 15:16:36 01410000false1200falseagus1200DMYXMP+secret key)**
 
     => Signature = **272897e7a137d8bb0e7b38e89076e074adbd1b10**
+
+    <br>
+    <br>

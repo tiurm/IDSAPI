@@ -50,13 +50,13 @@ tags:
 
       <br>
 
-      Inquiry: 
+      <u> Inquiry: </u>
 
       To make an inquiry, CA sends an Inquiry request message to aggregator, who in turn submits the message to Biller upon successfully authenticating its signature. Biller then responds with requested data (customer name total amount, response code 00) to aggregator, who in turn passes the data to CA, if the inquiry is successful. If failed, CA receives a response code other than 00.
 
       <br>
 
-      Payment:                         
+      <u>Payment:</u>                      
 
       To make a payment, CA then sends a Payment request message (which includes requested data from the earlier Inquiry message) to aggregator, who in turn submits the message to Biller upon successfully authenticating its signature. Biller then responds with acknowledgement data (receipt code, response code 00) to aggregator, who in turn passes the data to CA, if the payment is successful. If failed, CA receives a response code other than 00.
 
@@ -73,7 +73,7 @@ tags:
 
       <br>
 
-      Advice: 
+      <u>Advice:</u>
 
       Advice requests are used to check if a payment is successful, in which case the customer receives a payment
       reference number (receiptcode).
@@ -95,7 +95,7 @@ tags:
       <br>
       <br>
 
-      Reversal: 
+      <u>Reversal:</u>
 
         Reversal requests are used to cancel a payment transaction. CA automatically sends a Reversal request message to aggregator if:
 
@@ -127,6 +127,9 @@ tags:
       ## Purpose of This Document - VA
       This document elaborates upon the specifications and process flows that are used by PT. Inovasi Daya Solusi and its partners to make a service create virtual account.
 
+      <br>
+      <br>
+
       ### Scope 
       This document covers:
       * Creating VA Flow
@@ -138,17 +141,32 @@ tags:
       * Payment
       * Advice or Reversal (subject to the product)
 
+      <br>
+      <br>
+
       ### Target Audience
       This document is prepared for merchant IT Development team.
       
+      <br>
+      <br>
+
       ## Flow - VA
+
+      <br>
+      <br>
+
       ![Flow]()
-      
+
+      <br>
+
       ### Notes:
       - If VA already Expired Biller or customers who want to make a transaction should request the VA Again
       - Updating VA does not mean Update VA number
       - VA that already created will be Automatically expired after 24 hours
       - VA that already paid cannot be used again
+
+      <br>
+      <br>
 
       ## Interface Requirements - VA
       |Interface Requirements|                                                                                 |
@@ -166,6 +184,9 @@ tags:
       ## Purpose of This Document - Ototrans
       This document elborates upon the specification and process flows that are used by PT Inovasi Daya Solusi and its partner to make a service payment point.
 
+      <br>
+      <br>
+
       ### Scope
 
       This document covers for each product:
@@ -177,9 +198,15 @@ tags:
       * Payment
       * Advice
 
+      <br>
+      <br>
+
       ### Target Audience 
 
       This document is targeted for use by merchants.
+
+      <br>
+      <br>
 
       ## Flow - Ototrans
       ![Flow]()
@@ -189,27 +216,45 @@ tags:
       ## Purpose of This Document - Setorku
       This document elaborates upon the specifications and process flows that are used by PT. IDS and its partners to make a service deposit point.
 
+      <br>
+      <br>
+
       ### Scope
 
       This document covers:
       * Create and Notify Transaction Flows
       * Message Formats together with their respective samples
 
+      <br>
+      <br>
+
       ### Target Audience 
       
       This document is prepared for Merchant's IT Development Team.
 
+      <br>
+      <br>
+
       ## Flow - Setorku
+
+      <br>
+      <br>
 
       ### Work Flow
       ![Work Flow]()
 
-      Details
+      <u>Details:</u>
       1. DKH Assignment process can be integrated with mobile collection of merchants.
       2. Setor Code can only be generated after Collector close the DKH.
 
+      <br>
+      <br>
+
       ### Service Point Flow
        ![Service Point Flow]()
+
+      <br>
+      <br>
 
       ## Interface Requirements - Setorku
 

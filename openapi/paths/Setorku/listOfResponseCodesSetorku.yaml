@@ -19,6 +19,9 @@ put:
     |10       |PRODUCTID_NOT_FOUND      |
     |02       |INVALID_TOTAL_AMOUNT     |
 
+    <br>
+    <br>
+
     ### Merchant's Notify API Response Codes
 
     NotifPayment 
@@ -28,9 +31,15 @@ put:
     |00       |SUCCESS                  |
     |05       |ERROR                    |
 
+    <br>
+    <br>
+
     NotifReversal
 
     |Response |Description              |
     |---------|-------------------------|
     |00       |SUCCESS                  |
     |05       |ERROR                    |
+
+    <br>
+    <br>

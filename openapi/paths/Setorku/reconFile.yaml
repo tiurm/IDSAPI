@@ -7,23 +7,30 @@ put:
 
     ![Reconcile Flow]()
 
-    Details:
+    <u>Details:<u/>
     1. Reconciliation File will send to merchants a day after (D+1) at 10.00 am
+
+    <br>
+    <br>
 
     ### Format
 
     ![Format]()
 
-    Details:
+    <u>Details:</u>
     1. Format File Name: FILENAME + Dateofrecon-1_company id
     2. File name started with "SETOR"
     3. Date of recon-1 shows data from the day before of recon's date
     4. company ID from IDS
     Example:
 
+    <br>
+    <br>
+
     ![Example]()
+
     From left to right: Payment Code - Pay date - Total amount - Receipt No - Partner ID - Tracking ref - Merchant transaction ID
 
-    Details:
+    <u>Details:</u>
     1. Date of Payment based on the date and time of scheduler works
     2. Receipt no from Alfa payment receipt
