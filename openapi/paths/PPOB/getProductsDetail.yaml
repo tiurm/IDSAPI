@@ -10,6 +10,14 @@ post:
         schema:
           type: object
           properties:
+            trxid: 
+              type: string 
+              example: AS1111111111
+              description: ID transaksi
+            partnerid: 
+              type: string 
+              example: TES
+              description: ID partner 
             productType:
               type: string 
               example: ingame
@@ -20,16 +28,12 @@ post:
               example: MLBBD_ID 
               description: Kode produk
 
-            partnerid: 
+            signature: 
               type: string 
-              example: TES
-              description: ID partner 
+              example: 79f78027f9609c885a3cb0f2a1b3d8592384324c
+              description: Signature Hash Value
 
-            trxid: 
-              type: string 
-              example: AS1111111111
-              description: ID transaksi
-
+            
   responses:
     "200" :
       description: "Success"
