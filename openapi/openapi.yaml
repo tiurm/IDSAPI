@@ -49,8 +49,6 @@ tags:
 
       #### Explanation:
 
-      <br>
-
       <u> Inquiry: </u>
 
       To make an inquiry, CA sends an Inquiry request message to aggregator, who in turn submits the message to Biller upon successfully authenticating its signature. Biller then responds with requested data (customer name total amount, response code 00) to aggregator, who in turn passes the data to CA, if the inquiry is successful. If failed, CA receives a response code other than 00.
@@ -71,8 +69,6 @@ tags:
       <br>
 
       #### Explanation:
-
-      <br>
 
       <u>Advice:</u>
 
