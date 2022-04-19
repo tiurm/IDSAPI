@@ -15,6 +15,16 @@ post:
               example: ingame
               description: Tipe produk yang direquest “ingame” atau “voucher”
 
+            partnerid: 
+              type: string 
+              example: TES
+              description: ID partner 
+
+            trxid: 
+              type: string 
+              example: AS1111111111
+              description: ID transaksi
+
   responses:
     "200" :
       description: "Success"
