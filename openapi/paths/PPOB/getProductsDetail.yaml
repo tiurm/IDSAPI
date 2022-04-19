@@ -20,6 +20,16 @@ post:
               example: MLBBD_ID 
               description: Kode produk
 
+            partnerid: 
+              type: string 
+              example: TES
+              description: ID partner 
+
+            trxid: 
+              type: string 
+              example: AS1111111111
+              description: ID transaksi
+
   responses:
     "200" :
       description: "Success"
