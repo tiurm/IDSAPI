@@ -8,9 +8,9 @@ servers:
 
 tags:
 
-  - name: Multibiller (PPOB)
+  - name: Digital Goods (Multibiller)
     description: |
-      ## Purpose of This Document - PPOB
+      ## Purpose of This Document - Digital Goods
       ---
       This document elaborates upon the specifications and process flows that are used by aggregator and its partners to make a service payment point.
 
@@ -36,7 +36,7 @@ tags:
       <br>
       <br>
 
-      ## Flow - PPOB
+      ## Flow - Digital Goods
       ---
       <br>
       <br>
@@ -108,7 +108,7 @@ tags:
       <br>
       <br>
 
-      ## Interface Requirements - PPOB
+      ## Interface Requirements - Digital Goods
       ---
       |Interface Requirements|                                                                                 |
       |----------------------|---------------------------------------------------------------------------------|
@@ -279,40 +279,40 @@ tags:
 
 paths:
 
-# PPOB ==========================================
+# Digital Goods ==========================================
 
-  /Inquiry (PPOB): 
-    $ref: paths/PPOB/inquiryPPOB.yaml
+  /Inquiry (Digital Goods): 
+    $ref: paths/Digital Goods/inquiryDigitalGoods.yaml
 
-  /Payment (PPOB):
-    $ref: paths/PPOB/paymentPPOB.yaml
+  /Payment (Digital Goods):
+    $ref: paths/Digital Goods/paymentDigitalGoods.yaml
 
-  /Advice (PPOB):
-    $ref: paths/PPOB/advicePPOB.yaml
+  /Advice (Digital Goods):
+    $ref: paths/Digital Goods/adviceDigitalGoods.yaml
 
-  /Reversal (PPOB):
-    $ref: paths/PPOB/reversalPPOB.yaml
+  /Reversal (Digital Goods):
+    $ref: paths/Digital Goods/reversalDigitalGoods.yaml
 
   /Get Products: 
-    $ref: paths/PPOB/getProducts.yaml
+    $ref: paths/Digital Goods/getProducts.yaml
 
   /Get Products Detail Unipin: 
-    $ref: paths/PPOB/getProductsDetail.yaml
+    $ref: paths/Digital Goods/getProductsDetail.yaml
 
   /Get Products Stocks: 
-    $ref: paths/PPOB/getProductStock.yaml
+    $ref: paths/Digital Goods/getProductStock.yaml
 
   /Additional Notes: 
-    $ref: paths/PPOB/additionalNotes.yaml
+    $ref: paths/Digital Goods/additionalNotes.yaml
   
   /Products:
-    $ref: paths/PPOB/products.yaml
+    $ref: paths/Digital Goods/products.yaml
 
-  /Signature (PPOB):
-    $ref: paths/PPOB/signaturePPOB.yaml
+  /Signature (Digital Goods):
+    $ref: paths/Digital Goods/signatureDigitalGoods.yaml
 
-  /List of Response Codes(PPOB):
-    $ref: paths/PPOB/listOfResponseCodesPPOB.yaml
+  /List of Response Codes(Digital Goods):
+    $ref: paths/Digital Goods/listOfResponseCodesDigitalGoods.yaml
 
 # Virtual Account ==========================================
 

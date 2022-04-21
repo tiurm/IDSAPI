@@ -1,8 +1,8 @@
 post:
-  description: See [Additional Notes](#tag/Multibiller-(PPOB)/paths/~1Additional%20Notes/put)
-  summary: Advice 
+  description: See [Additional Notes](#tag/Digital Goods (Multibiller)/paths/~1Additional%20Notes/put)
+  summary: Payment 
   tags:
-    - Multibiller (PPOB)
+    - Digital Goods (Multibiller)
   requestBody:
     required: true
     content:
@@ -12,28 +12,28 @@ post:
           properties:
             trxid:
               type: string
-              example: DEV0816160124
+              example: DEV1019170918
               description: Transaction ID
               
             trxdate:
               type: string
-              example: 2021-08-16 16:01:24
+              example: 2020-10-19 17:09:18
               description: Transaction Date 
               format: yyyy-MM-dd HH:mm:ss
             
             partnerid:
               type: string
-              example: SLS
+              example: SHP
               description: Partner ID
             
             productid:
               type: string
-              example: MTF
+              example: BPFI
               description: Product ID
 
             customerid:
               type: string
-              example: '9951701438'
+              example: '0003721900053'
               description: Customer ID
 
             extendInfo:
@@ -41,10 +41,15 @@ post:
               example: ""
               description: Other entry info apart from CustomerID if any.
 
+            totalamount:
+                type: string
+                example: '835000'
+                description: Total Amount
+
             trackingref:
               type: string
-              example: DN08161601240
-              description: Tracking Reference No Note = trackingref in Advice messages has to be the same as trackingref in Payment
+              example: '1019170918'
+              description: Tracking Reference No
 
             terminalid:
               type: string
@@ -53,8 +58,10 @@ post:
 
             signature:
               type: string
-              example: 3022cd2727ab03d3989590b4a6516ef68dee99b0
+              example: 628a94fb75068f5c1a1175638d8a1c80ce1494a3
               description: Signature Hash Value
+
+            
 
   responses:
     "200":
@@ -66,12 +73,12 @@ post:
             properties:
               trxid:
                 type: string
-                example: DEV0816160124
+                example: DEV1019170918
                 description: Transaction ID
             
               trxdate:
                 type: string
-                example: 2021-08-16 16:01:43
+                example: 2020-10-19 17:16:17
                 description: Transaction Date 
                 format: yyyy-MM-dd HH:mm:ss
             
@@ -82,12 +89,12 @@ post:
               
               productid:
                 type: string
-                example: MTF
+                example: BPFI
                 description: Product ID
 
               customerid:
                 type: string
-                example: '9951701438'
+                example: '0003721900053'
                 description: Customer ID
 
               extendInfo:
@@ -95,10 +102,22 @@ post:
                 example: ""
                 description: Other entry info apart from CustomerID if any.
 
+              totalamount:
+                type: string
+                example: '835000'
+                description: Total Amount
+
               receiptcode:
                 type: string
-                example: SHP9951701438014101
-                description: Payment Reference No               
+                example: SHP000372190053161701
+                description: Payment Reference No
+              
+              additionaldata:
+                type: object
+                example: JSON Object:{"id_pelanggan":"000372190053","nama_pelanggan":"FIRDAUS","biaya_admin":"15.000","jumlah_tagihan":"800.000","total_bayar":"835.000","no_polis":"B 7373CYX","tanggal_jatuh_tempo":"20190915","biaya_denda":"20.000","nama_produk":"BataviaFinance","angsuran_ke":"18","no_struk":"SHP000372190053161701","tanggal_lunas":"2020-10-19 17:16:17"}
+                
+                description: Mengacu ke tabel additional data pada bagian additional notes
+
               rc:
                 type: string
                 example: '00'
@@ -106,13 +125,13 @@ post:
 
               rcdesc:
                 type: string
-                example: SUCCSESS
+                example: SUKSES
                 description: Response Code Description
               
               trackingref:
                 type: string
-                example: DN08161601240
-                description: Tracking Reference No Note = trackingref in Advice messages has to be the same as trackingref in Payment
+                example: '1019170918'
+                description: Tracking Reference No
 
               terminalid:
                 type: string
@@ -121,5 +140,5 @@ post:
 
               signature:
                 type: string
-                example: 7f4ed534b59a6b46501a5da91b8e70bd84a1ea27
+                example: 628a94fb75068f5c1a1175638d8a1c80ce1494a3
                 description: Signature Hash Value

@@ -1,7 +1,7 @@
 post:
   summary: Get Product Stock
   tags:
-    - Multibiller (PPOB)
+    - Digital Goods (Multibiller)
   
   requestBody:
     required: true 
