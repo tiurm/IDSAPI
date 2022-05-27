@@ -10,15 +10,6 @@ post:
         schema:
           type: object
           properties:
-            trxid: 
-              type: string 
-              example: AS1111111111
-              description: ID transaksi
-
-            partnerid: 
-              type: string 
-              example: TES
-              description: ID partner 
 
             signature: 
               type: string 

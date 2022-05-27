@@ -10,29 +10,11 @@ post:
         schema:
           type: object
           properties:
-            trxid: 
-              type: string 
-              example: AS1111111111
-              description: ID transaksi
-
-            partnerid: 
-              type: string 
-              example: TES
-              description: ID partner   
 
             productType:
               type: string 
               example: ingame
               description: Tipe produk yang direquest “ingame” atau “voucher”
-
-            signature: 
-              type: string 
-              example: fdee0a026d6f3873e4ae79dee06ce867df6997fe
-              description: Signature Hash Value
-
-            
-
-            
 
   responses:
     "200" :
