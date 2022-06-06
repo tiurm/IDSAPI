@@ -132,6 +132,23 @@ put:
     |   |                         |biaya_parkir_pokok     |Biaya Parkir Pokok      |
     |   |                         |biaya_pajak_progresif  |Biaya Pajak Progresif   |
     |   |                         |ntpd                   |ntpd                    |
+    |   |                         |                       |                        |
+    |12 |**Property**             |id_pelanggan           |ID Pelanggan            |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |tgl_mulai              |Tanggal mulai           |
+    |   |                         |tgl_berakhir           |Tanggal berkahir        |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |alamat                 |Alamat                  |
+    |13 |**Pendidikan**           |nomor_pelanggan        |Nomor Pelanggan         |
+    |   |                         |nama_pelanggan         |Nama pelanggan          |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |semester               |Semester                |
+    |   |                         |nim_kodebilling       |NIM atau Kode Billing   |
     
     <br>
     <br>
@@ -328,6 +345,28 @@ put:
     |   |                         |biaya_parkir_pokok     |Biaya parkir pokok      |
     |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
     |   |                         |ntpd                   |ntpd                    |
+    |12 |**Property**             |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama pelanggan          |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |periode_bln_thn        |Periode bulan dan tahun |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |tgl_mulai              |Tanggal mulai           |
+    |   |                         |tgl_berakhir           |Tanggal berkahir        |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |alamat                 |Alamat                  |
+    |   |                         |nama_brand             |Nama Brand              |
+    |   |                         |no_struk               |Nomor struk             |
+    |13 |**Pendidikan**           |id_pelanggan           |ID pelanggan            |
+    |   |                         |nama_pelanggan         |Tagihan                 |
+    |   |                         |biaya_admin            |Biaya admin             |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |nama_produk            |Nama produk             |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |no_struk               |Nomor struk             |
+    |   |                         |tanggal_lunas          |tanggal_lunas           |
+    |   |                         |semester               |Semester                |
+    |   |                         |nim_kodebilling        |NIM atau kode billing   |
 
     <br>
     <br>
@@ -518,6 +557,29 @@ put:
     |   |                         |biaya_parkir_pokok     |Biaya parkir pokok      |
     |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
     |   |                         |ntpd                   |ntpd                    |
+    |12 |**Property**             |id_pelanggan           |ID Pelanggan            |
+    |   |                         |nama_pelanggan         |Nama pelanggan          |
+    |   |                         |biaya_admin            |Biaya Admin             |
+    |   |                         |total_bayar            |Tagihan                 |
+    |   |                         |nama_produk            |Nama Produk             |
+    |   |                         |tgl_mulai              |Tanggal mulai           |
+    |   |                         |tgl_berakhir           |Tanggal berkahir        |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |alamat                 |Alamat                  |
+    |   |                         |nama_brand             |Nama Bran               |
+    |   |                         |no_struk               |Nomor struk             |
+    |   |                         |tanggal_lunas          |Tanggal Lunas           |
+    |   |                         |tanggal_transaksi      |Tanggal Transaksi       |
+    |13 |**Pendidikan**           |id_pelanggan           |ID pelanggan            |
+    |   |                         |nama_pelanggan         |Tagihan                 |
+    |   |                         |biaya_admin            |Biaya admin             |
+    |   |                         |total_bayar            |Total Bayar             |
+    |   |                         |nama_produk            |Nama produk             |
+    |   |                         |nominal                |Nominal                 |
+    |   |                         |no_struk               |Nomor struk             |
+    |   |                         |tanggal_lunas          |tanggal_lunas           |
+    |   |                         |semester               |Semester                |
+    |   |                         |nim_kodebilling        |NIM atau kode billing   |
 
     <br>
     <br>
