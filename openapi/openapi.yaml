@@ -113,13 +113,13 @@ tags:
       ---
       <br>
       <br>
-        Step by step :
-        
-        1. Hit get products API first to get product list
+        Step by step:
 
-        2. Hit get products detail API to get product details 
+          1. Hit get products API first to get product list
 
-        3. Hit get products stock API to get product stock information
+          2. Hit get products detail API to get product details 
+
+          3. Hit get products stock API to get product stock information
       <br>
       <br>
 
