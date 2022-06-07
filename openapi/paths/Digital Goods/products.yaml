@@ -246,14 +246,14 @@ put:
     |EDV          |Esta Dana Ventura            |V          |V          |V         |-           |
     |MBF          |Mizuho Balimor Finance       |V          |V          |V         |-           |
     |TNK          |Tunaiku                      |V          |V          |V         |-           |
-    |AMM          |Koperasi Anugerah Mega Multidana |V          |V          |V         |-           |
+    |AMM          |Koperasi Anugerah Mega Multidana |V          |V          |V         |-       |
     |PMT          |Permata Finance              |V          |V          |V         |-           |
     |MDL          |Mandala                      |V          |V          |V         |-           |
     |TPF          |Transpasific Finance         |V          |V          |V         |-           |
     |BPFI         |Batavia Properindo Finance   |V          |V          |V         |-           |  
-    |CITRA        |Cakrawala Citramega Multifinance |V          |V          |V         |-           |
+    |CITRA        |Cakrawala Citramega Multifinance |V          |V          |V         |-       |
     |NRC          |Koperasi Nusa Raya Cipta     |V          |V          |V         |-           |
-    |**TV CABLE**                                                                                   |
+    |**TV CABLE**                                                                               |
     |TVBIG        |BIG TV                       |V          |V          |V         |-           | 
     |TVINDVS      |INDOVISION                   |V          |V          |V         |-           |
     |TVINDVS      |TOP TV                       |V          |V          |V         |-           |
@@ -267,7 +267,7 @@ put:
     |TVTLKMV      |TELKOMVISION                 |V          |V          |V         |-           |  
     |TVTLKMV      |YESTV                        |V          |V          |V         |-           |
     |TVINDVS      |OKE VISION                   |V          |V          |V         |-           |  
-    |**Insurance**                                                                                  |
+    |**Insurance**                                                                              |
     |BPJSKS       |BPJS Kesehatan               |V          |V          |V         |-           |
     |ASRBINT1     |ASURANSI BINTANG PAKET 1     |V          |V          |V         |-           |
     |ASRBINT2     |ASURANSI BINTANG PAKET 2     |V          |V          |V         |-           |
@@ -275,7 +275,7 @@ put:
     |ASRPRU       |PRUDENTIAL PREMI LANJUTAN    |V          |V          |V         |-           |
     |ASRTOKIO     |TOKIO MARINE (SemuaTagihan)  |V          |V          |V         |-           |
     |ASRTOKIOS    |TOKIO MARINE (SatuTagihan)   |V          |V          |V         |-           |
-    |**PDAM**                                                                                       |
+    |**PDAM**                                                                                   |
     |1027         |PDAM Tapin                   |V          |V          |V         |-           |
     |1028         |PDAM Semarang                |V          |V          |V         |-           |
     |1029         |PDAM Bangkalan               |V          |V          |V         |-           |
@@ -296,7 +296,7 @@ put:
     |9034         |PDAM Mataram                 |V          |V          |V         |-           |
     |9005         |PDAM Palembang               |V          |V          |V         |-           |
     |PDAMDKIAETRA |PDAM DKIAETRA                |V          |V          |V         |-           |
-    |**PBB**                                                                                        |
+    |**PBB**                                                                                    |
     |PBBKOT.BOGOR         |PBB Kota Bogor       |V          |V          |V         |-           |
     |PBBKOT.CIMAHI        |PBB Kota Cimahi      |V          |V          |V         |-           | 
     |PBBKOT.DEPOK         |PBB Kota Depok       |V          |V          |V         |-           |
@@ -306,28 +306,229 @@ put:
     |PBBKOT.CIREBON       |PBB Kota Cirebon     |V          |V          |V         |-           |
     |PBBKOT.SUKABUMI      |PBB Kota Sukabumi    |V          |V          |V         |-           |
     |PBBKAB.BANDUNG       |PBB Kabupaten Bandung|V          |V          |V         |-           |  
-    |PBBKAB.BANDUNGBARAT  |PBB Kabupaten Bandung Barat |V          |V          |V         |-           |
-    |PBBKAB.SUBANG        |PBB Kabupaten Subang  |V          |V          |V         |-           |  
-    |PBBKAB.BOGORCIBINONG |PBB Kabupaten Bogor Cibinong |V          |V          |V         |-           |
-    |PBBKAB.CIAMIS        |PBB Kabupaten Ciamis  |V          |V          |V         |-           |
-    |PBBKAB.CIANJUR       |PBB Kabupaten Cianjur |V          |V          |V         |-           |
-    |PBBKAB.PURWAKARTA    |PBB Kabupaten Purwakarta |V          |V          |V         |-           |
-    |PBBKAB.SUKABUMI      |PBB Kabupaten Sukabumi|V          |V          |V         |-           |  
-    |PBBKAB.SUMEDANG      |PBB Kabupaten Sumedang|V          |V          |V         |-           |
-    |PBBKAB.CIREBON       |PBB Kabupaten Cirebon |V          |V          |V         |-           |
-    |PBBKAB.GARUT         |PBB Kabupaten Garut   |V          |V          |V         |-           |
-    |PBBKAB.INDRAMAYU     |PBB Kabupaten Indramayu|V          |V          |V         |-           | 
-    |PBBKAB.KARAWANG      |PBB Kabupaten Karawang|V          |V          |V         |-           |
-    |PBBKAB.KUNINGAN      |PBB Kabupaten Kuningan|V          |V          |V         |-           |
-    |PBBKAB.MAJALENGKA    |PBB Kabupaten Majalengka |V          |V          |V         |-           |
-    |PBBKAB.TASIKMALAYA   |PBB Kabupaten Tasikmalaya|V          |V          |V         |-           |
-    |PBBKAB.PANGANDARAN   |PBB Kabupaten Pangandaran|V          |V          |V         |-           |
-    |**ESAMSAT**                                                                                        |
-    |ESAMSAT. JAWABARAT   |ESAMSAT Jawa Barat       |V          |V          |V         |-           |
-    |**EMONEY**                                                                        |
-    |HPMTRIX      |INDOSAT OOREDO                                                               |
-    |HPSMART      |SMARFREN                     |V          |V          |V         |-           |
-    |HPTSEL       |TELKOMSEL                    |V          |V          |V         |-           |
-    |HPXL         |XL                           |V          |V          |V         |-           |
+    |PBBKAB.BANDUNGBARAT  |PBB Kabupaten Bandung Barat |V          |V          |V         |-    |
+    |PBBKAB.SUBANG        |PBB Kabupaten Subang  |V          |V          |V         |-          |  
+    |PBBKAB.BOGORCIBINONG |PBB Kabupaten Bogor Cibinong |V          |V          |V         |-   |
+    |PBBKAB.CIAMIS        |PBB Kabupaten Ciamis  |V          |V          |V         |-          |
+    |PBBKAB.CIANJUR       |PBB Kabupaten Cianjur |V          |V          |V         |-          |
+    |PBBKAB.PURWAKARTA    |PBB Kabupaten Purwakarta |V          |V          |V         |-       |
+    |PBBKAB.SUKABUMI      |PBB Kabupaten Sukabumi|V          |V          |V         |-          |  
+    |PBBKAB.SUMEDANG      |PBB Kabupaten Sumedang|V          |V          |V         |-          |
+    |PBBKAB.CIREBON       |PBB Kabupaten Cirebon |V          |V          |V         |-          |
+    |PBBKAB.GARUT         |PBB Kabupaten Garut   |V          |V          |V         |-          |
+    |PBBKAB.INDRAMAYU     |PBB Kabupaten Indramayu|V          |V          |V         |-         | 
+    |PBBKAB.KARAWANG      |PBB Kabupaten Karawang|V          |V          |V         |-          |
+    |PBBKAB.KUNINGAN      |PBB Kabupaten Kuningan|V          |V          |V         |-          |
+    |PBBKAB.MAJALENGKA    |PBB Kabupaten Majalengka |V          |V          |V         |-       |
+    |PBBKAB.TASIKMALAYA   |PBB Kabupaten Tasikmalaya|V          |V          |V         |-       |
+    |PBBKAB.PANGANDARAN   |PBB Kabupaten Pangandaran|V          |V          |V         |-       |
+    |**ESAMSAT**                                                                                |
+    |ESAMSAT. JAWABARAT   |ESAMSAT Jawa Barat       |V          |V          |V         |-       |
+    |**EMONEY**                                                                                 |
+    |OVO DENOM    |                                                                             |
+    |OVO20P       |Saldo OVO 20k                |-          |V          |V         |-           |
+    |OVO25P       |Saldo OVO 25k                |-          |V          |V         |-           |
+    |OVO30P       |Saldo OVO 30k                |-          |V          |V         |-           |
+    |OVO35P       |Saldo OVO 35k                |-          |V          |V         |-           |
+    |OVO40P       |Saldo OVO 40k                |-          |V          |V         |-           |
+    |OVO45P       |Saldo OVO 45k                |-          |V          |V         |-           |
+    |OVO50P       |Saldo OVO 50k                |-          |V          |V         |-           |
+    |OVO55P       |Saldo OVO 55k                |-          |V          |V         |-           |
+    |OVO60P       |Saldo OVO 60k                |-          |V          |V         |-           |
+    |OVO65P       |Saldo OVO 65k                |-          |V          |V         |-           |
+    |OVO70P       |Saldo OVO 70k                |-          |V          |V         |-           |
+    |OVO75P       |Saldo OVO 75k                |-          |V          |V         |-           |
+    |OVO80P       |Saldo OVO 80k                |-          |V          |V         |-           |
+    |OVO85P       |Saldo OVO 85k                |-          |V          |V         |-           |
+    |OVO90P       |Saldo OVO 90k                |-          |V          |V         |-           |
+    |OVO95P       |Saldo OVO 95k                |-          |V          |V         |-           |
+    |OVO100P      |Saldo OVO 100k               |-          |V          |V         |-           |
+    |OVO150P      |Saldo OVO 150k               |-          |V          |V         |-           |
+    |OVO200P      |Saldo OVO 200k               |-          |V          |V         |-           |
+    |OVO250P      |Saldo OVO 250k               |-          |V          |V         |-           |
+    |OVO300P      |Saldo OVO 300k               |-          |V          |V         |-           |
+    |OVO400P      |Saldo OVO 400k               |-          |V          |V         |-           |
+    |OVO500P      |Saldo OVO 500k               |-          |V          |V         |-           |
+    |OVO600P      |Saldo OVO 600k               |-          |V          |V         |-           |
+    |OVO700P      |Saldo OVO 700k               |-          |V          |V         |-           |
+    |OVO800P      |Saldo OVO 800k               |-          |V          |V         |-           |
+    |OVO900P      |Saldo OVO 900k               |-          |V          |V         |-           |
+    |OVO1000P     |Saldo OVO 1.000k             |-          |V          |V         |-           |
+    |OVO DENOM LURUS|                                                                           |
+    |OVO20K       |Saldo OVO 20k                |-          |V          |V         |-           |
+    |OVO25K       |Saldo OVO 25k                |-          |V          |V         |-           |
+    |OVO30K       |Saldo OVO 30k                |-          |V          |V         |-           |
+    |OVO35K       |Saldo OVO 35k                |-          |V          |V         |-           |
+    |OVO40K       |Saldo OVO 40k                |-          |V          |V         |-           |
+    |OVO45K       |Saldo OVO 45k                |-          |V          |V         |-           |
+    |OVO50K       |Saldo OVO 50k                |-          |V          |V         |-           |
+    |OVO55K       |Saldo OVO 55k                |-          |V          |V         |-           |
+    |OVO60K       |Saldo OVO 60k                |-          |V          |V         |-           |
+    |OVO65K       |Saldo OVO 65k                |-          |V          |V         |-           |
+    |OVO70K       |Saldo OVO 70k                |-          |V          |V         |-           |
+    |OVO75K       |Saldo OVO 75k                |-          |V          |V         |-           |
+    |OVO80K       |Saldo OVO 80k                |-          |V          |V         |-           |
+    |OVO85K       |Saldo OVO 85k                |-          |V          |V         |-           |
+    |OVO90K       |Saldo OVO 90k                |-          |V          |V         |-           |
+    |OVO95K       |Saldo OVO 95k                |-          |V          |V         |-           |
+    |OVO100K      |Saldo OVO 100k               |-          |V          |V         |-           |
+    |OVO150K      |Saldo OVO 150k               |-          |V          |V         |-           |
+    |OVO200K      |Saldo OVO 200k               |-          |V          |V         |-           |
+    |OVO250K      |Saldo OVO 250k               |-          |V          |V         |-           |
+    |OVO300K      |Saldo OVO 300k               |-          |V          |V         |-           |
+    |OVO400K      |Saldo OVO 400k               |-          |V          |V         |-           |
+    |OVO500K      |Saldo OVO 500k               |-          |V          |V         |-           |
+    |OVO600K      |Saldo OVO 600k               |-          |V          |V         |-           |
+    |OVO700K      |Saldo OVO 700k               |-          |V          |V         |-           |
+    |OVO800K      |Saldo OVO 800k               |-          |V          |V         |-           |
+    |OVO900K      |Saldo OVO 900k               |-          |V          |V         |-           |
+    |OVO1000K     |Saldo OVO 1.000k             |-          |V          |V         |-           |
+    |GOJEK DRIVER |                                                                             |
+    |GJD10H       |Saldo GOJEK DRIVER 10K       |-          |V          |V         |-           |
+    |GJD20H       |Saldo GOJEK DRIVER 20K       |-          |V          |V         |-           |
+    |GJD25H       |Saldo GOJEK DRIVER 25K       |-          |V          |V         |-           |
+    |GJD50H       |Saldo GOJEK DRIVER 50K       |-          |V          |V         |-           |
+    |GJD75H       |Saldo GOJEK DRIVER 75K       |-          |V          |V         |-           |
+    |GJD100H      |Saldo GOJEK DRIVER 100K      |-          |V          |V         |-           |
+    |GJD150H      |Saldo GOJEK DRIVER 150K      |-          |V          |V         |-           |
+    |GJD200H      |Saldo GOJEK DRIVER 200K      |-          |V          |V         |-           |
+    |GJD250H      |Saldo GOJEK DRIVER 250K      |-          |V          |V         |-           |
+    |GJD300H      |Saldo GOJEK DRIVER 300K      |-          |V          |V         |-           |
+    |GJD500H      |Saldo GOJEK DRIVER 500K      |-          |V          |V         |-           |
+    |GOJEK Customer|                                                                            |
+    |EMGJK        |Minimal top up 10K           |-          |V          |V         |-           |
+    |GRAB Customer|                                                                             |
+    |GRAB20H      |Saldo GRAB Cust 20K          |-          |V          |V         |-           |
+    |GRAB25H      |Saldo GRAB Cust 25K          |-          |V          |V         |-           |
+    |GRAB30H      |Saldo GRAB Cust 30K          |-          |V          |V         |-           |
+    |GRAB40H      |Saldo GRAB Cust 40K          |-          |V          |V         |-           |
+    |GRAB50H      |Saldo GRAB Cust 50K          |-          |V          |V         |-           |
+    |GRAB75H      |Saldo GRAB Cust 75K          |-          |V          |V         |-           |
+    |GRAB100H     |Saldo GRAB Cust 100K         |-          |V          |V         |-           |
+    |GRAB150H     |Saldo GRAB Cust 150K         |-          |V          |V         |-           |
+    |GRAB200H     |Saldo GRAB Cust 200K         |-          |V          |V         |-           |
+    |GRAB250H     |Saldo GRAB Cust 250K         |-          |V          |V         |-           |
+    |GRAB300H     |Saldo GRAB Cust 300K         |-          |V          |V         |-           |
+    |GRAB500H     |Saldo GRAB Cust 500K         |-          |V          |V         |-           |
+    |SHOPEEPAY DENOM|                                                                           |
+    |SHOP10P      |Saldo Shopee Pay 10K         |-          |V          |V         |-           |
+    |SHOP15P      |Saldo Shopee Pay 15K         |-          |V          |V         |-           |
+    |SHOP20P      |Saldo Shopee Pay 20K         |-          |V          |V         |-           |
+    |SHOP25P      |Saldo Shopee Pay 25K         |-          |V          |V         |-           |
+    |SHOP30P      |Saldo Shopee Pay 30K         |-          |V          |V         |-           |
+    |SHOP35P      |Saldo Shopee Pay 35K         |-          |V          |V         |-           |
+    |SHOP40P      |Saldo Shopee Pay 40K         |-          |V          |V         |-           |
+    |SHOP45P      |Saldo Shopee Pay 45K         |-          |V          |V         |-           |
+    |SHOP50P      |Saldo Shopee Pay 50K         |-          |V          |V         |-           |
+    |SHOP55P      |Saldo Shopee Pay 55K         |-          |V          |V         |-           |
+    |SHOP60P      |Saldo Shopee Pay 60K         |-          |V          |V         |-           |
+    |SHOP65P      |Saldo Shopee Pay 65K         |-          |V          |V         |-           |
+    |SHOP70P      |Saldo Shopee Pay 70K         |-          |V          |V         |-           |
+    |SHOP75P      |Saldo Shopee Pay 75K         |-          |V          |V         |-           |
+    |SHOP80P      |Saldo Shopee Pay 80K         |-          |V          |V         |-           |
+    |SHOP85P      |Saldo Shopee Pay 85K         |-          |V          |V         |-           |
+    |SHOP90P      |Saldo Shopee Pay 90K         |-          |V          |V         |-           |
+    |SHOP95P      |Saldo Shopee Pay 95K         |-          |V          |V         |-           |
+    |SHOP100P     |Saldo Shopee Pay 100K        |-          |V          |V         |-           |
+    |SHOP150P     |Saldo Shopee Pay 150K        |-          |V          |V         |-           |
+    |SHOP200P     |Saldo Shopee Pay 200K        |-          |V          |V         |-           |
+    |SHOP250P     |Saldo Shopee Pay 250K        |-          |V          |V         |-           |
+    |SHOP300P     |Saldo Shopee Pay 300K        |-          |V          |V         |-           |
+    |SHOP400P     |Saldo Shopee Pay 400K        |-          |V          |V         |-           |
+    |SHOP500P     |Saldo Shopee Pay 500K        |-          |V          |V         |-           |
+    |SHOP1000P    |Saldo Shopee Pay 1000K       |-          |V          |V         |-           |
+    |SHOPEEPAY DENOM LURUS|                                                                     |
+    |SHOP10H      |Saldo Shopee Pay 10K         |-          |V          |V         |-           |
+    |SHOP15H      |Saldo Shopee Pay 15K         |-          |V          |V         |-           |
+    |SHOP20H      |Saldo Shopee Pay 20K         |-          |V          |V         |-           |
+    |SHOP25H      |Saldo Shopee Pay 25K         |-          |V          |V         |-           |
+    |SHOP30H      |Saldo Shopee Pay 30K         |-          |V          |V         |-           |
+    |SHOP35H      |Saldo Shopee Pay 35K         |-          |V          |V         |-           |
+    |SHOP40H      |Saldo Shopee Pay 40K         |-          |V          |V         |-           |
+    |SHOP45H      |Saldo Shopee Pay 45K         |-          |V          |V         |-           |
+    |SHOP50H      |Saldo Shopee Pay 50K         |-          |V          |V         |-           |
+    |SHOP55H      |Saldo Shopee Pay 55K         |-          |V          |V         |-           |
+    |SHOP60H      |Saldo Shopee Pay 60K         |-          |V          |V         |-           |
+    |SHOP65H      |Saldo Shopee Pay 65K         |-          |V          |V         |-           |
+    |SHOP70H      |Saldo Shopee Pay 70K         |-          |V          |V         |-           |
+    |SHOP75H      |Saldo Shopee Pay 75K         |-          |V          |V         |-           |
+    |SHOP80H      |Saldo Shopee Pay 80K         |-          |V          |V         |-           |
+    |SHOP85H      |Saldo Shopee Pay 85K         |-          |V          |V         |-           |
+    |SHOP90H      |Saldo Shopee Pay 90K         |-          |V          |V         |-           |
+    |SHOP95H      |Saldo Shopee Pay 95K         |-          |V          |V         |-           |
+    |SHOP100H     |Saldo Shopee Pay 100K        |-          |V          |V         |-           |
+    |SHOP150H     |Saldo Shopee Pay 150K        |-          |V          |V         |-           |
+    |SHOP200H     |Saldo Shopee Pay 200K        |-          |V          |V         |-           |
+    |SHOP250H     |Saldo Shopee Pay 250K        |-          |V          |V         |-           |
+    |SHOP300H     |Saldo Shopee Pay 300K        |-          |V          |V         |-           |
+    |SHOP400H     |Saldo Shopee Pay 400K        |-          |V          |V         |-           |
+    |SHOP500H     |Saldo Shopee Pay 500K        |-          |V          |V         |-           |
+    |SHOP1000H    |Saldo Shopee Pay 1000K       |-          |V          |V         |-           |
+    |LINK AJA|                                                                                  |
+    |LINK10P      |Saldo LINK AJA 10k           |-          |V          |V         |-           |
+    |LINK20P      |Saldo LINK AJA 20k           |-          |V          |V         |-           |
+    |LINK25P      |Saldo LINK AJA 25k           |-          |V          |V         |-           |
+    |LINK50P      |Saldo LINK AJA 50k           |-          |V          |V         |-           |
+    |LINK100P     |Saldo LINK AJA 100k          |-          |V          |V         |-           |
+    |LINK150P     |Saldo LINK AJA 150k          |-          |V          |V         |-           |
+    |LINK200P     |Saldo LINK AJA 200k          |-          |V          |V         |-           |
+    |LINK250P     |Saldo LINK AJA 250k          |-          |V          |V         |-           |
+    |LINK300P     |Saldo LINK AJA 300k          |-          |V          |V         |-           |
+    |LINK400P     |Saldo LINK AJA 400k          |-          |V          |V         |-           |
+    |LINK500P     |Saldo LINK AJA 500k          |-          |V          |V         |-           |
+    |LINK1000P    |Saldo LINK AJA 1000k         |-          |V          |V         |-           |
+    |E-TOLL MANDIRI|                                                                            |
+    |TOLM25H      |Saldo ETOLL MANDIRI 25K      |-          |V          |V         |-           |
+    |TOLM50H      |Saldo ETOLL MANDIRI 50K      |-          |V          |V         |-           |
+    |TOLM100H     |Saldo ETOLL MANDIRI 100K     |-          |V          |V         |-           |
+    |TOLM150H     |Saldo ETOLL MANDIRI 150K     |-          |V          |V         |-           |
+    |TOLM200H     |Saldo ETOLL MANDIRI 200K     |-          |V          |V         |-           |
+    |TOLM300H     |Saldo ETOLL MANDIRI 300K     |-          |V          |V         |-           |
+    |TOLM500H     |Saldo ETOLL MANDIRI 500K     |-          |V          |V         |-           |
+    |E-TOLL BRI|                                                                                |
+    |TOLBR20H     |Saldo ETOLL BRIZZI 20K       |-          |V          |V         |-           |
+    |TOLBR50H     |Saldo ETOLL BRIZZI 50K       |-          |V          |V         |-           |
+    |TOLBR75H     |Saldo ETOLL BRIZZI 75K       |-          |V          |V         |-           |
+    |TOLBR100H    |Saldo ETOLL BRIZZI 100K      |-          |V          |V         |-           |
+    |TOLBR250H    |Saldo ETOLL BRIZZI 250K      |-          |V          |V         |-           |
+    |TOLBR500H    |Saldo ETOLL BRIZZI 500K      |-          |V          |V         |-           |
+    |TOLBR750H    |Saldo ETOLL BRIZZI 750K      |-          |V          |V         |-           |
+    |TOLBR1000H   |Saldo ETOLL BRIZZI 1000K     |-          |V          |V         |-           |
+    |**Property**                                                                               |
+    |3712	|Apartemen Kemang View                |-          |V          |V         |-           |
+    |3713	|Apartemen Taman Melati Jatinangor    |-          |V          |V         |-           |
+    |3714	|Atap Merah Residence                 |-          |V          |V         |-           |
+    |3715	|Cluster Muslim Talbiyya              |-          |V          |V         |-           |
+    |3716	|Guest House Blessing Residence       |-          |V          |V         |-           |
+    |3717	|KB4 Kost                             |-          |V          |V         |-           |
+    |3718	|Kos Eksklusif Aster Kramat           |-          |V          |V         |-           |
+    |3719	|Kos Mutiara Semarang                 |-          |V          |V         |-           |
+    |3720	|Kos Rumah Hj. Latifah Kayu Manis IX  |-          |V          |V         |-           |
+    |3721	|Kost Citron Urban Room Cipete        |-          |V          |V         |-           |
+    |3722	|Kost Dewi                            |-          |V          |V         |-           |
+    |3723	|Kost Drommehuset                     |-          |V          |V         |-           |
+    |3724	|Kost Grinting Residence              |-          |V          |V         |-           |
+    |3725	|Kost Kejora                          |-          |V          |V         |-           |
+    |3726	|Kost Kembar Kemayoran                |-          |V          |V         |-           |
+    |3727	|Kost Memoria Residence               |-          |V          |V         |-           |
+    |3728	|Kost Menara Place Meruya             |-          |V          |V         |-           |
+    |3729	|Kost Nine Orchid                     |-          |V          |V         |-           |
+    |3730	|Kost Nurjanah                        |-          |V          |V         |-           |
+    |3731	|Kost Paso Executive                  |-          |V          |V         |-           |
+    |3732	|Kost Penjernihan 31                  |-          |V          |V         |-           |
+    |3733	|Kost Praja Dalam                     |-          |V          |V         |-           |
+    |3734	|Kost Renata House Kelapa Gading      |-          |V          |V         |-           |
+    |3735	|Kost Residence Nine                  |-          |V          |V         |-           |     
+    |3736	|Kost Rosalina                        |-          |V          |V         |-           |
+    |3737	|Kost Rumah Ungu                      |-          |V          |V         |-           |
+    |3738	|Kost Tebet Barat Dalam               |-          |V          |V         |-           |
+    |3739	|Kost Teguh                           |-          |V          |V         |-           |
+    |3740	|Madina Village                       |-          |V          |V         |-           |
+    |3741	|MnV Co-Living                        |-          |V          |V         |-           |                 
+    |3742	|MT Haryono Residence                 |-          |V          |V         |-           |    
+    |3743	|Permata Green Cinere                 |-          |V          |V         |-           |
+    |3744	|Perumahan Mampang Hills              |-          |V          |V         |-           |
+    |3745	|Taman Ventura Indah 2                |-          |V          |V         |-           |
+
     <br>
     <br>
