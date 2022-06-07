@@ -21,11 +21,9 @@ put:
     |   |                         |                       |                        |
     |2  |**PLN PREPAID**          |id_pelanggan           |ID Pelanggan            |
     |   |                         |nama_pelanggan         |Nama                    |
+    |   |                         |tarifdaya              |Tarif/Daya              |
+    |   |                         |token_unsold           |Token Unsold            |
     |   |                         |biaya_admin            |Biaya Admin             |
-    |   |                         |periode_bln_thn        |BL/TH                   |
-    |   |                         |jumlah_tagihan         |Total Lbr Tagihan       |
-    |   |                         |nominal                |RP Tagihan              |
-    |   |                         |total_bayar            |Tagihan                 |
     |   |                         |                       |                        |
     |3  |**BPJS**                 |no_va_kepala_keluarga  |No VA Kepala Kel.       |
     |   |                         |wilayah                |Nama Cabang             |
