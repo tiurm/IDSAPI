@@ -12,12 +12,12 @@ put:
     |PLNPRE       |Prepaid PLN                  |V          |V          |V         |-           |
     |PLNPOST      |Prepaid PLN                  |V          |V          |V         |-           |
     |0001         |Telkom                       |V          |V          |V         |-           |
-    |**Postpaid mobile**                                                                            |
+    |**Postpaid mobile**                                                                        |
     |HPMTRIX      |INDOSAT OOREDO               |V          |V          |V         |-           |
     |HPSMART      |SMARFREN                     |V          |V          |V         |-           |
     |HPTSEL       |TELKOMSEL                    |V          |V          |V         |-           |
     |HPXL         |XL                           |V          |V          |V         |-           |
-    |**Prepaid mobile**                                                                             |
+    |**Prepaid mobile**                                                                         |
     |AXP25        |Axis Prabayar 25K            |-          |V          |V         |-           |
     |AXP50        |Axis Prabayar 50K            |-          |V          |V         |-           |
     |AS100        |KartuAs 100K                 |-          |V          |V         |-           |
@@ -324,6 +324,10 @@ put:
     |PBBKAB.PANGANDARAN   |PBB Kabupaten Pangandaran|V          |V          |V         |-           |
     |**ESAMSAT**                                                                                        |
     |ESAMSAT. JAWABARAT   |ESAMSAT Jawa Barat       |V          |V          |V         |-           |
-
+    |**EMONEY**                                                                        |
+    |HPMTRIX      |INDOSAT OOREDO                                                               |
+    |HPSMART      |SMARFREN                     |V          |V          |V         |-           |
+    |HPTSEL       |TELKOMSEL                    |V          |V          |V         |-           |
+    |HPXL         |XL                           |V          |V          |V         |-           |
     <br>
     <br>
