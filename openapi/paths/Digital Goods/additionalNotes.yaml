@@ -343,7 +343,7 @@ put:
     |   |                         |biaya_parkir_pokok     |Biaya parkir pokok      |
     |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
     |   |                         |ntpd                   |ntpd                    |
-    |12 |**Property**             |id_pelanggan           |ID Pelanggan            |
+    |16 |**Property**             |id_pelanggan           |ID Pelanggan            |
     |   |                         |nama_pelanggan         |Nama pelanggan          |
     |   |                         |biaya_admin            |Biaya Admin             |
     |   |                         |periode_bln_thn        |Periode bulan dan tahun |
@@ -355,8 +355,8 @@ put:
     |   |                         |alamat                 |Alamat                  |
     |   |                         |nama_brand             |Nama Brand              |
     |   |                         |no_struk               |Nomor struk             |
-    |13 |**Pendidikan**           |id_pelanggan           |ID pelanggan            |
-    |   |                         |nama_pelanggan         |Tagihan                 |
+    |17 |**Pendidikan**           |id_pelanggan           |ID pelanggan            |
+    |   |                         |nama_pelanggan         |Nama Pelanggan          |
     |   |                         |biaya_admin            |Biaya admin             |
     |   |                         |total_bayar            |Total Bayar             |
     |   |                         |nama_produk            |Nama produk             |
@@ -365,6 +365,11 @@ put:
     |   |                         |tanggal_lunas          |tanggal_lunas           |
     |   |                         |semester               |Semester                |
     |   |                         |nim_kodebilling        |NIM atau kode billing   |
+    |18 |**E - Money**            |total_bayar            |Total Bayar             |
+    |   |                         |no_hp                  |Nomor Handphone         |
+    |   |                         |no_struk               |Nomor Struk             |
+    |   |                         |tanggal_lunas          |tanggal_lunas           |
+    |   |                         |token                  |Token                   |
 
     <br>
     <br>
@@ -555,7 +560,7 @@ put:
     |   |                         |biaya_parkir_pokok     |Biaya parkir pokok      |
     |   |                         |biaya_pajak_progresif  |Biaya pajak progresif   |
     |   |                         |ntpd                   |ntpd                    |
-    |12 |**Property**             |id_pelanggan           |ID Pelanggan            |
+    |15 |**Property**             |id_pelanggan           |ID Pelanggan            |
     |   |                         |nama_pelanggan         |Nama pelanggan          |
     |   |                         |biaya_admin            |Biaya Admin             |
     |   |                         |total_bayar            |Tagihan                 |
@@ -568,8 +573,8 @@ put:
     |   |                         |no_struk               |Nomor struk             |
     |   |                         |tanggal_lunas          |Tanggal Lunas           |
     |   |                         |tanggal_transaksi      |Tanggal Transaksi       |
-    |13 |**Pendidikan**           |id_pelanggan           |ID pelanggan            |
-    |   |                         |nama_pelanggan         |Tagihan                 |
+    |16 |**Pendidikan**           |id_pelanggan           |ID pelanggan            |
+    |   |                         |nama_pelanggan         |Nama Pelanggan          |
     |   |                         |biaya_admin            |Biaya admin             |
     |   |                         |total_bayar            |Total Bayar             |
     |   |                         |nama_produk            |Nama produk             |
@@ -578,7 +583,11 @@ put:
     |   |                         |tanggal_lunas          |tanggal_lunas           |
     |   |                         |semester               |Semester                |
     |   |                         |nim_kodebilling        |NIM atau kode billing   |
-
+    |18 |**E - Money**            |total_bayar            |Total Bayar             |
+    |   |                         |no_hp                  |Nomor Handphone         |
+    |   |                         |no_struk               |Nomor Struk             |
+    |   |                         |tanggal_lunas          |tanggal_lunas           |
+    |   |                         |token                  |Token                   |
     <br>
     <br>
   
