@@ -114,10 +114,11 @@ tags:
       <br>
       <br>
         Step by step :
+        
         1. Hit get products API first to get product list
 
         2. Hit get products detail API to get product details 
-        
+
         3. Hit get products stock API to get product stock information
       <br>
       <br>
