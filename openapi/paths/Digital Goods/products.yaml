@@ -495,40 +495,40 @@ put:
     |TOLBR750H    |Saldo ETOLL BRIZZI 750K      |-          |V          |V         |-           |
     |TOLBR1000H   |Saldo ETOLL BRIZZI 1000K     |-          |V          |V         |-           |
     |**Property**                                                                               |
-    |3712	|Apartemen Kemang View                |-          |V          |V         |-           |
-    |3713	|Apartemen Taman Melati Jatinangor    |-          |V          |V         |-           |
-    |3714	|Atap Merah Residence                 |-          |V          |V         |-           |
-    |3715	|Cluster Muslim Talbiyya              |-          |V          |V         |-           |
-    |3716	|Guest House Blessing Residence       |-          |V          |V         |-           |
-    |3717	|KB4 Kost                             |-          |V          |V         |-           |
-    |3718	|Kos Eksklusif Aster Kramat           |-          |V          |V         |-           |
-    |3719	|Kos Mutiara Semarang                 |-          |V          |V         |-           |
-    |3720	|Kos Rumah Hj. Latifah Kayu Manis IX  |-          |V          |V         |-           |
-    |3721	|Kost Citron Urban Room Cipete        |-          |V          |V         |-           |
-    |3722	|Kost Dewi                            |-          |V          |V         |-           |
-    |3723	|Kost Drommehuset                     |-          |V          |V         |-           |
-    |3724	|Kost Grinting Residence              |-          |V          |V         |-           |
-    |3725	|Kost Kejora                          |-          |V          |V         |-           |
-    |3726	|Kost Kembar Kemayoran                |-          |V          |V         |-           |
-    |3727	|Kost Memoria Residence               |-          |V          |V         |-           |
-    |3728	|Kost Menara Place Meruya             |-          |V          |V         |-           |
-    |3729	|Kost Nine Orchid                     |-          |V          |V         |-           |
-    |3730	|Kost Nurjanah                        |-          |V          |V         |-           |
-    |3731	|Kost Paso Executive                  |-          |V          |V         |-           |
-    |3732	|Kost Penjernihan 31                  |-          |V          |V         |-           |
-    |3733	|Kost Praja Dalam                     |-          |V          |V         |-           |
-    |3734	|Kost Renata House Kelapa Gading      |-          |V          |V         |-           |
-    |3735	|Kost Residence Nine                  |-          |V          |V         |-           |     
-    |3736	|Kost Rosalina                        |-          |V          |V         |-           |
-    |3737	|Kost Rumah Ungu                      |-          |V          |V         |-           |
-    |3738	|Kost Tebet Barat Dalam               |-          |V          |V         |-           |
-    |3739	|Kost Teguh                           |-          |V          |V         |-           |
-    |3740	|Madina Village                       |-          |V          |V         |-           |
-    |3741	|MnV Co-Living                        |-          |V          |V         |-           |                 
-    |3742	|MT Haryono Residence                 |-          |V          |V         |-           |    
-    |3743	|Permata Green Cinere                 |-          |V          |V         |-           |
-    |3744	|Perumahan Mampang Hills              |-          |V          |V         |-           |
-    |3745	|Taman Ventura Indah 2                |-          |V          |V         |-           |
+    |3712	|Apartemen Kemang View                |V          |V          |V         |-           |
+    |3713	|Apartemen Taman Melati Jatinangor    |V          |V          |V         |-           |
+    |3714	|Atap Merah Residence                 |V          |V          |V         |-           |
+    |3715	|Cluster Muslim Talbiyya              |V          |V          |V         |-           |
+    |3716	|Guest House Blessing Residence       |V          |V          |V         |-           |
+    |3717	|KB4 Kost                             |V          |V          |V         |-           |
+    |3718	|Kos Eksklusif Aster Kramat           |V          |V          |V         |-           |
+    |3719	|Kos Mutiara Semarang                 |V          |V          |V         |-           |
+    |3720	|Kos Rumah Hj. Latifah Kayu Manis IX  |V          |V          |V         |-           |
+    |3721	|Kost Citron Urban Room Cipete        |V          |V          |V         |-           |
+    |3722	|Kost Dewi                            |V          |V          |V         |-           |
+    |3723	|Kost Drommehuset                     |V          |V          |V         |-           |
+    |3724	|Kost Grinting Residence              |V          |V          |V         |-           |
+    |3725	|Kost Kejora                          |V          |V          |V         |-           |
+    |3726	|Kost Kembar Kemayoran                |V          |V          |V         |-           |
+    |3727	|Kost Memoria Residence               |V          |V          |V         |-           |
+    |3728	|Kost Menara Place Meruya             |V          |V          |V         |-           |
+    |3729	|Kost Nine Orchid                     |V          |V          |V         |-           |
+    |3730	|Kost Nurjanah                        |V          |V          |V         |-           |
+    |3731	|Kost Paso Executive                  |V          |V          |V         |-           |
+    |3732	|Kost Penjernihan 31                  |V          |V          |V         |-           |
+    |3733	|Kost Praja Dalam                     |V          |V          |V         |-           |
+    |3734	|Kost Renata House Kelapa Gading      |V          |V          |V         |-           |
+    |3735	|Kost Residence Nine                  |V          |V          |V         |-           |     
+    |3736	|Kost Rosalina                        |V          |V          |V         |-           |
+    |3737	|Kost Rumah Ungu                      |V          |V          |V         |-           |
+    |3738	|Kost Tebet Barat Dalam               |V          |V          |V         |-           |
+    |3739	|Kost Teguh                           |V          |V          |V         |-           |
+    |3740	|Madina Village                       |V          |V          |V         |-           |
+    |3741	|MnV Co-Living                        |V          |V          |V         |-           |                 
+    |3742	|MT Haryono Residence                 |V          |V          |V         |-           |    
+    |3743	|Permata Green Cinere                 |V          |V          |V         |-           |
+    |3744	|Perumahan Mampang Hills              |V          |V          |V         |-           |
+    |3745	|Taman Ventura Indah 2                |V          |V          |V         |-           |
 
     <br>
     <br>
