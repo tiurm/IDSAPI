@@ -11,6 +11,16 @@ post:
           type: object
           properties:
 
+            trxid: 
+              type: string  
+              example: "123"
+              description: ID dari Transaksi
+
+            partnerid: 
+              type: string  
+              example: "SLS"
+              description: ID dari partner
+
             signature: 
               type: string 
               example: 2468581f45bb3d041cd8e38289141ee88dc377ea

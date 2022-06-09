@@ -11,10 +11,25 @@ post:
           type: object
           properties:
 
-            productType:
+            trxid: 
+              type: string  
+              example: "123"
+              description: ID dari Transaksi
+
+            partnerid: 
+              type: string  
+              example: "SLS"
+              description: ID dari partner
+
+            product_type:
               type: string 
               example: ingame
               description: Tipe produk yang direquest “ingame” atau “voucher”
+
+            signature: 
+              type: string 
+              example: b3108ab9222fd968e3043351adf1f9998e77f4bfbce5d0cbcc36bac826e1d858
+              description: Signature hash value
 
   responses:
     "200" :

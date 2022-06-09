@@ -9,8 +9,19 @@ post:
       application/json:
         schema:
           type: object
-          properties: 
-            productType:
+          properties:
+
+            trxid: 
+              type: string  
+              example: "123"
+              description: ID dari Transaksi
+
+            partnerid: 
+              type: string  
+              example: "SLS"
+              description: ID dari partner
+
+            product_type:
               type: string 
               example: ingame
               description: Tipe produk yang direquest “ingame” atau “voucher”
@@ -20,7 +31,11 @@ post:
               example: MLBBD_ID 
               description: Kode produk
 
-            
+            signature: 
+              type: string 
+              example: 2468581f45bb3d041cd8e38289141ee88dc377ea
+              description: Signature Hash Value
+  
   responses:
     "200" :
       description: "Success"
