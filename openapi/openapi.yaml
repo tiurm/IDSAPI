@@ -115,6 +115,7 @@ tags:
       <br>
 
         <img src="../flow game product api.png" alt="">
+        <img src=""
 
       <br>
       <br>
@@ -372,6 +373,9 @@ paths:
 
   /IDS's Create Store code:
     $ref: paths/Setorku/createStoreCode.yaml
+
+  /Cancel Payment Code: 
+    $ref: paths/Setorku/cancelPaymentCode.yaml
 
   /Notif Payment: 
     $ref: paths/Setorku/notifPayment.yaml

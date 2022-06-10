@@ -5,7 +5,7 @@ post:
     - Digital Goods (Multibiller)
   requestBody:
     required: true
-    content:
+    content:  
       application/json:
         schema:
           type: object
