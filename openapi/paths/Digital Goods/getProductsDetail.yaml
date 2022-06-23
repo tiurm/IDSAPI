@@ -78,7 +78,7 @@ post:
 
               fields:   
                 type: array
-                desctiption: (Jika tipe string maka jenis input harus textbox, untuk tipe dropdown maka jenis input harus dropdownlist)
+                description: Jika tipe string maka jenis input harus textbox, untuk tipe dropdown maka jenis input harus dropdownlist
                 items:
                   type: object
                   properties:
