@@ -24,7 +24,7 @@ post:
             product_type:
               type: string 
               example: ingame
-              description: Tipe produk yang direquest “ingame” atau “voucher”
+              description: Tipe produk yang direquest “ingame” atau “voucher” atau "pulsa", 
 
             product_code: 
               type: string 
@@ -78,6 +78,7 @@ post:
 
               fields:   
                 type: array
+                desctiption: (Jika tipe string maka jenis input harus textbox, untuk tipe dropdown maka jenis input harus dropdownlist)
                 items:
                   type: object
                   properties:
